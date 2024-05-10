@@ -5,49 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Offers</title>
     <link rel="icon" href="images/logo-web.svg" type="web-logo" />
-    <!-- Optional: If you want to specify the image for Apple devices -->
     <link rel="apple-touch-icon" href="images/logo-web.svg" />
-    <link rel="stylesheet" href="css/global.css" />
+    <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container">
-        <div class="header-elements">
-          <a href="#" class="logo"
-            ><img src="images/logo-web.svg" alt="logo" />
-            <div class="logo-text"></div
-          ></a>
-          <a class="company" href="#">Company</a>
-
-          <div class="hed-phone">
-            <img src="images/icons/phone.svg" alt="phone" />
-            <div class="ph-number">
-              <a href="tel:+998 (99) 999-99-99">+998 (99) 999-99-99</a>
-              <a href="tel:+998 (99) 999-99-99">+998 (99) 999-99-99</a>
-            </div>
+        <section class="header-elem">
+          <a href="#" class="header-elem__logo">
+            <img src="/images/logo-web.svg" alt="logo" />
+            <img src="/images/logo-text.svg" alt="text" />
+          </a>
+          <a href="#" class="company">Company</a>
+          <div class="phone-box">
+            <a href="tel: +998(90)9999999">
+              <img
+                class="phone-box__icon"
+                src="/images/icons/phone.svg"
+                alt="icon"
+              />
+            </a>
+            <span class="phone-box__numbers">
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+            </span>
           </div>
-          <a href="#" class="btn btn-1"
-            >Sign Up <i class="bx bxs-plus-circle"></i
+          <a href="#" class="header-elem__btn">
+            Sign Up <i class="bx bxs-plus-circle"></i
           ></a>
-          <button class="btn2">Rus</button>
-        </div>
+          <a href="#" class="header-elem__btn">Rus</a>
+        </section>
       </div>
     </header>
-    <main class="main">
-      <div class="container">
-        <div class="work-with">
-          <span class="line"></span>
-          <p>Work With <span>Best Offer Deal</span></p>
-        </div>
+    <div class="container">
+      <main class="main">
+        <section class="what-v-do">
+          <span>
+            <div class="what-v-do__line"></div>
+            <h3>Work With<span> Best Offer Deal</span></h3>
+          </span>
 
-        <div class="inovate-text">
           <h1>
             INOVATE SOLUTION FOR <br />
-            BUSINESS <span>SUCCESS</span>
+            BUSINESS SUCCESS
           </h1>
           <p>
             We provide services and solutions, and supply any needs to our
@@ -55,20 +60,28 @@
             honest, and promptest services to our clients, and treat our
             suppliers and partners.
           </p>
-        </div>
-        <div class="inovate-elements">
-          <a href="#" class="work-together"
-            >Work Together<i class="bx bxs-plus-circle"></i
-          ></a>
-          <div class="call-evr">
-            <div class="call-icon"><img src="/images/icons/phone.svg" alt=""></div>
-            <span
-              >Call Everyday
-              <a class="call" href="tel:+998 (99) 999-99-99">+998 (99) 999-99-99</a></span
-            >
+          <div class="what-v-do__elements">
+            <a href="#" class="what-v-do__btn">
+              Work Together <i class="bx bxs-plus-circle"></i
+            ></a>
+            <div class="what-v-do__numbers">
+              <img src="/images/icons/phone.svg" alt="icon" />
+              <span class="what-v-do__tell">
+                <p>Call Everyday</p>
+                <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+              </span>
+            </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </section>
+      </main>
+    </div>
+    <div class="back-img">
+      <img src="/images/back-images/union.svg" alt="logo" />
+      <img
+        class="list-dude"
+        src="/images/back-images/Order processed 2.svg"
+        alt="logo"
+      />
+    </div>
   </body>
 </html>
