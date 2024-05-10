@@ -19,6 +19,7 @@ body {
 }
 .back-img > img {
   margin-top: -400px;
+  z-index: -1;
 }
 
 .container {
