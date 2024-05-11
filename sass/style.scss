@@ -10,7 +10,15 @@ $white: #ffffff;
 $font-family: "Montserrat", sans-serif;
 $second-family: "Inter", sans-serif;
 $Cunia-family: "Cunia", sans-serif;
-
+h1 {
+  font-family: $Cunia-family;
+  color: $darkblue;
+}
+h2 {
+  font-family: $Cunia-family;
+  font-size: 64px;
+  font-weight: 700;
+}
 * {
   padding: 0;
   margin: 0;
@@ -29,15 +37,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
 
-  & > img {
-    margin-top: -400px;
-    z-index: -1;
-  }
+.wave {
+  position: absolute;
+  top: 400px;
+  z-index: -1;
 }
 
 .container {
-  max-width: 1620px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -101,6 +110,7 @@ header {
 
 .company {
   font-size: 24px;
+  color: $black;
   font-weight: 400;
   font-family: $font-family;
 }
@@ -217,14 +227,309 @@ header {
   }
 }
 
-.list-dude {
-  width: 700px;
-  height: 550px;
+.what-v-do2 {
+  padding-top: 348px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+
+    & > h2 {
+      font-size: 64px;
+      font-family: $Cunia-family;
+      font-weight: 700;
+      color: $white;
+    }
+    & > h3 {
+      font-size: 40px;
+      font-weight: 700;
+      font-family: $font-family;
+      color: $white;
+    }
+    & > p {
+      font-size: 32px;
+      font-family: $font-family;
+      font-weight: 500;
+      width: 738px;
+      color: $white;
+    }
+  }
 }
 
-h1 {
-  font-family: $Cunia-family;
-  color: $darkblue;
+.fast-way {
+  padding-top: 200px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+    & > h2 {
+      color: $black;
+      font-size: 54px;
+      font-weight: 700;
+    }
+    & > h2 > span {
+      background: linear-gradient(to left, #17bff0, #00317d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}
+
+.list-dude {
+  width: 700px;
+  height: 739px;
+  padding-top: 0px;
+}
+
+.our-mission {
+  padding-top: 170px;
+  position: relative;
+
+  &__back {
+    display: flex;
+    width: 100%;
+    padding-top: 45px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+  }
+  & > h2 {
+    font-size: 64px;
+    background: linear-gradient(to bottom, #17bff0, #00317d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  & > p {
+    font-size: 40px;
+    font-family: $font-family;
+    font-weight: 500;
+    width: 738px;
+  }
+  &__card-box {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    & > div {
+      background: $white;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      box-shadow: 0 0 5px $lightblack;
+      border-radius: 20px;
+      width: 630px;
+      height: 269px;
+      & > img {
+        height: 100px;
+        width: 100px;
+      }
+      & > span {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & > h3 {
+          font-size: 32px;
+          font-weight: 500;
+          font-family: $font-family;
+        }
+
+        & > p {
+          font-family: $font-family;
+          font-size: 24px;
+          font-weight: 400;
+          color: $lightblack;
+        }
+      }
+    }
+  }
+}
+
+.lets-get {
+  margin-top: 409px;
+  & > p {
+    font-family: $font-family;
+    font-size: 40px;
+    color: $black;
+    font-weight: 500;
+  }
+  &__buttons {
+    margin-top: 101px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 634px;
+    & > button {
+      height: 70px;
+      width: 305px;
+      background: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid $lightblack;
+      font-size: 32px;
+      font-weight: 500;
+      color: $black;
+      cursor: pointer;
+      font-family: $font-family;
+    }
+  }
+  &__inputs-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 85px;
+    width: 90%;
+    gap: 20px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  &__labels {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: $font-family;
+    color: $black;
+  }
+  &__labels2 {
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: $font-family;
+    color: $black;
+  }
+  &__inputs {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 0 35px 0 15px;
+    width: 413px;
+    height: 59px;
+    border: 2px solid $darkblue;
+    &::placeholder {
+      color: $lightblack;
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+}
+
+.file-input-container {
+  position: relative;
+  width: 413px;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: $font-family;
+  color: $black;
+}
+
+/* Style for file input button */
+.file-input-button {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid $darkblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for file input */
+.file-input {
+  display: none;
+}
+
+/* Style for file input label */
+.file-input-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+  margin-top: -300px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 869px;
+  width: 100%;
+}
+.footer {
+  position: absolute;
+  top: -100px;
+}
+
+.footer-elements {
+  padding-top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  & > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1;
+    & > span {
+      justify-content: center;
+      display: flex;
+      width: 413px;
+      padding-left: 20px;
+      flex-direction: column;
+      gap: 15px;
+      & > h3 {
+        font-size: 40px;
+        font-weight: 500;
+        font-family: $font-family;
+        color: $white;
+      }
+      & > a {
+        font-family: $font-family;
+        color: $white;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+    & > a {
+      align-items: center;
+      display: flex;
+      z-index: 1;
+      gap: 23px;
+      padding-inline: 43px;
+      border-right: 2px solid $white;
+    }
+  }
+  & > h5 {
+    padding-top: 30px;
+    text-align: center;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: $font-family;
+    color: $white;
+  }
 }
 
 //----------------MEDIA--------------//
