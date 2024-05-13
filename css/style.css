@@ -31,7 +31,7 @@ body {
 
 .wave {
   position: absolute;
-  top: 400px;
+  top: 50%;
   z-index: -1;
 }
 
@@ -56,6 +56,10 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.header-elem__logo > img {
+  width: 105px;
+  height: 110px;
 }
 .header-elem__btn {
   position: relative;
@@ -221,6 +225,10 @@ header {
   display: flex;
   flex-direction: row;
 }
+.what-v-do2 > img {
+  height: 600px;
+  width: 600px;
+}
 .what-v-do2__text {
   display: flex;
   flex-direction: column;
@@ -289,6 +297,10 @@ header {
   justify-content: center;
   position: absolute;
   z-index: -1;
+}
+.our-mission__back > img {
+  width: 908px;
+  height: 905px;
 }
 .our-mission > h2 {
   font-size: 64px;
@@ -425,7 +437,6 @@ header {
   color: #000;
 }
 
-/* Style for file input button */
 .file-input-button {
   display: inline-block;
   padding: 15px 20px;
@@ -436,12 +447,10 @@ header {
   cursor: pointer;
 }
 
-/* Style for file input */
 .file-input {
   display: none;
 }
 
-/* Style for file input label */
 .file-input-label {
   display: block;
   margin-top: 10px;
@@ -518,6 +527,106 @@ footer {
 
 @media (max-width: 1720px) {
   .container {
-    max-width: 1400px;
+    max-width: 1200px;
+  }
+  .wave {
+    top: 60%;
+  }
+  .what-v-do2 {
+    justify-content: center;
+  }
+  .what-v-do2 > img {
+    height: 500px;
+    width: 500px;
+  }
+  .what-v-do2__text {
+    gap: 20px;
+    width: 60%;
+  }
+  .what-v-do2__text > h2 {
+    font-size: 64px;
+    font-weight: 600;
+  }
+  .what-v-do2__text > h3 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .what-v-do2__text > p {
+    font-size: 24px;
+    font-weight: 400;
+    width: 90%;
+  }
+  .list-dude {
+    width: 600px;
+    height: 639px;
+  }
+  .our-mission__back {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .our-mission__back > img {
+    width: 838px;
+    height: 885px;
+  }
+  .our-mission > h2 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .our-mission > p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .our-mission__card-box {
+    justify-content: center;
+    gap: 20px;
+  }
+  .our-mission__card-box > div {
+    width: 500px;
+    height: 220px;
+  }
+  .our-mission__card-box > div > span {
+    padding: 15px 10px;
+  }
+  .our-mission__card-box > div > span > h3 {
+    font-size: 25.6px;
+    font-weight: 400;
+  }
+  .our-mission__card-box > div > span > p {
+    font-size: 19.2px;
+    font-weight: 400;
+  }
+  .lets-get {
+    margin-top: 315px;
+  }
+  .lets-get > h2 {
+    font-size: 40px;
+  }
+  .lets-get > p {
+    font-size: 25.6px;
+    font-weight: 400;
+  }
+  .lets-get__buttons {
+    margin-top: 50px;
+  }
+  .lets-get__buttons > button {
+    font-size: 25.6px;
+    font-weight: 500;
+  }
+  .lets-get__labels {
+    font-size: 25.6px;
+  }
+  .lets-get__labels2 {
+    font-size: 25.6px;
+  }
+  .lets-get__labels3 {
+    font-size: 25.6px;
+  }
+  .lets-get__labels3 > p {
+    font-size: 12.8px;
+  }
+  .footer {
+    top: -50px;
   }
 }/*# sourceMappingURL=style.css.map */
