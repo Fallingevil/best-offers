@@ -18,9 +18,7 @@ h2 {
 }
 
 body {
-  position: absolute;
   width: 100%;
-  height: 100vh;
 }
 
 .back-img {
@@ -29,14 +27,8 @@ body {
   justify-content: space-between;
 }
 
-.wave {
-  position: absolute;
-  top: 50%;
-  z-index: -1;
-}
-
 .container {
-  max-width: 1300px;
+  max-width: 1420px;
   margin: auto;
 }
 
@@ -130,6 +122,8 @@ header {
 
 .what-v-do {
   padding-top: 210px;
+  position: absolute;
+  z-index: 2;
 }
 .what-v-do > span {
   display: flex;
@@ -219,20 +213,23 @@ header {
 }
 
 .what-v-do2 {
-  padding-top: 348px;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
+  background: transparent;
+  padding-top: 280px;
+}
+.what-v-do2_elements {
   display: flex;
   flex-direction: row;
+  gap: 100px;
 }
-.what-v-do2 > img {
-  height: 600px;
-  width: 600px;
+.what-v-do2_elements > img {
+  width: 413px;
+  height: 543px;
 }
 .what-v-do2__text {
   display: flex;
   flex-direction: column;
-  gap: 77px;
+  gap: 60px;
 }
 .what-v-do2__text > h2 {
   font-size: 64px;
@@ -254,8 +251,26 @@ header {
   color: #ffffff;
 }
 
+.wave-back {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 160vh;
+}
+
+.wave-back::before {
+  content: "";
+  position: absolute;
+  border-radius: 60px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(/images/back-images/union.svg) no-repeat center;
+  background-size: cover;
+}
+
 .fast-way {
-  padding-top: 200px;
+  margin-top: -500px;
   display: flex;
   gap: 20px;
   flex-direction: row-reverse;
@@ -318,6 +333,7 @@ header {
 .our-mission__card-box {
   margin-top: 80px;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
@@ -385,13 +401,14 @@ header {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
+.lets-get__buttons > button:active {
+  border-bottom: 5px solid #00317d;
+}
 .lets-get__inputs-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 500px 500px;
   margin-top: 85px;
   width: 90%;
-  gap: 20px;
 }
 .lets-get__inputs-box > div {
   display: flex;
@@ -463,6 +480,7 @@ footer {
   margin-top: -300px;
   display: flex;
   align-items: end;
+  z-index: -1;
   justify-content: center;
   height: 869px;
   width: 100%;
@@ -527,106 +545,16 @@ footer {
 
 @media (max-width: 1720px) {
   .container {
-    max-width: 1200px;
+    max-width: 1300px;
   }
-  .wave {
-    top: 60%;
+}
+@media (max-width: 1470px) {
+  .container {
+    max-width: 1140px;
   }
-  .what-v-do2 {
-    justify-content: center;
-  }
-  .what-v-do2 > img {
-    height: 500px;
-    width: 500px;
-  }
-  .what-v-do2__text {
-    gap: 20px;
-    width: 60%;
-  }
-  .what-v-do2__text > h2 {
-    font-size: 64px;
-    font-weight: 600;
-  }
-  .what-v-do2__text > h3 {
-    font-size: 32px;
-    font-weight: 400;
-  }
-  .what-v-do2__text > p {
-    font-size: 24px;
-    font-weight: 400;
-    width: 90%;
-  }
-  .list-dude {
-    width: 600px;
-    height: 639px;
-  }
-  .our-mission__back {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .our-mission__back > img {
-    width: 838px;
-    height: 885px;
-  }
-  .our-mission > h2 {
-    font-size: 36px;
-    font-weight: 500;
-  }
-  .our-mission > p {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .our-mission__card-box {
-    justify-content: center;
-    gap: 20px;
-  }
-  .our-mission__card-box > div {
-    width: 500px;
-    height: 220px;
-  }
-  .our-mission__card-box > div > span {
-    padding: 15px 10px;
-  }
-  .our-mission__card-box > div > span > h3 {
-    font-size: 25.6px;
-    font-weight: 400;
-  }
-  .our-mission__card-box > div > span > p {
-    font-size: 19.2px;
-    font-weight: 400;
-  }
-  .lets-get {
-    margin-top: 315px;
-  }
-  .lets-get > h2 {
-    font-size: 40px;
-  }
-  .lets-get > p {
-    font-size: 25.6px;
-    font-weight: 400;
-  }
-  .lets-get__buttons {
-    margin-top: 50px;
-  }
-  .lets-get__buttons > button {
-    font-size: 25.6px;
-    font-weight: 500;
-  }
-  .lets-get__labels {
-    font-size: 25.6px;
-  }
-  .lets-get__labels2 {
-    font-size: 25.6px;
-  }
-  .lets-get__labels3 {
-    font-size: 25.6px;
-  }
-  .lets-get__labels3 > p {
-    font-size: 12.8px;
-  }
-  .footer {
-    top: -50px;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
   }
 }/*# sourceMappingURL=style.css.map */
