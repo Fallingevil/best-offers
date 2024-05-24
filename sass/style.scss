@@ -562,9 +562,39 @@ footer {
 
 //----------------MEDIA--------------//
 
+@media (max-width: 1880px) {
+  .what-v-do2 {
+    padding-top: 480px;
+    &_elements {
+      padding-top: 50px;
+      gap: 50px;
+    }
+    &__text {
+      gap: 20px;
+    }
+  }
+}
 @media (max-width: 1720px) {
   .container {
     max-width: 1300px;
+  }
+  .what-v-do2 {
+    &_elements {
+      padding-top: 60px;
+      gap: 40px;
+      & > img {
+        width: 330px;
+        height: 434px;
+      }
+    }
+
+    &__text {
+      gap: 20px;
+    }
+  }
+
+  footer {
+    margin-top: -200px;
   }
 }
 
@@ -572,11 +602,72 @@ footer {
   .container {
     max-width: 1140px;
   }
+
+  .what-v-do2__text {
+    & > h2 {
+      font-size: 51px;
+    }
+    & > h3 {
+      font-size: 32px;
+    }
+    & > p {
+      font-size: 24px;
+    }
+  }
+  .what-v-do2_elements > img {
+    width: 264px;
+    height: 347px;
+  }
+
+  .list-dude {
+    width: 560px;
+    height: 591px;
+  }
+
+  .fast-way {
+    gap: 50px;
+    margin-top: -300px;
+  }
+
+  .our-mission__card-box > div {
+    width: 504px;
+    height: 315px;
+  }
+  footer {
+    margin-top: -150px;
+  }
 }
 
 @media (max-width: 1400px) {
-}
+  .what-v-do2 {
+    padding-top: 480px;
+  }
 
+  .fast-way__text > h2 {
+    font-size: 51px;
+  }
+
+  .our-mission {
+    & > h2 {
+      font-size: 51px;
+    }
+    & > p {
+      font-size: 32px;
+    }
+  }
+
+  .lets-get {
+    & > h2 {
+      font-size: 51px;
+    }
+    & > p {
+      font-size: 32px;
+    }
+  }
+  .footer {
+    margin-top: 150px;
+  }
+}
 // For devices with a maximum width of 992px
 @media (max-width: 1199px) {
   .container {
