@@ -633,14 +633,19 @@ footer {
     width: 504px;
     height: 315px;
   }
-  footer {
-    margin-top: -150px;
+  .footer {
+    position: absolute;
+    top: -50px;
   }
 }
 
 @media (max-width: 1400px) {
   .what-v-do2 {
-    padding-top: 480px;
+    padding-top: 450px;
+  }
+
+  .wave-back {
+    height: 190vh;
   }
 
   .fast-way__text > h2 {
@@ -663,12 +668,142 @@ footer {
     & > p {
       font-size: 32px;
     }
-  }
-  .footer {
-    margin-top: 150px;
+    &__inputs-box {
+      align-items: flex-end;
+      grid-template-columns: 450px 500px;
+    }
   }
 }
 // For devices with a maximum width of 992px
+@media (max-width: 1220px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header-elem {
+    height: 130px;
+    &__logo > img {
+      width: 84px;
+      height: 88px;
+    }
+    &__btn {
+      font-size: 19px;
+    }
+  }
+
+  .phone-box {
+    &__icon {
+      height: 48px * 0.8;
+      width: 48px * 0.8;
+    }
+    &__numbers > a {
+      font-size: 19px;
+    }
+  }
+
+  .company {
+    font-size: 19px;
+  }
+
+  .what-v-do {
+    &__tell {
+      gap: 15px;
+      & > p {
+        font-size: 24px;
+      }
+      & > a {
+        font-size: 19px;
+      }
+    }
+    & > span > h3 {
+      font-size: 24px;
+    }
+    & > h1 {
+      font-size: 51px;
+    }
+    & > p {
+      font-size: 19px;
+    }
+  }
+
+  .what-v-do2_elements {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .what-v-do2__text {
+    width: 70%;
+    & > h3 {
+      font-size: 24px;
+    }
+    & > p {
+      font-size: 19px;
+      width: 100%;
+    }
+  }
+
+  .our-mission {
+    &__card-box {
+      gap: 30px;
+      & > div {
+        width: 403px;
+        height: 252px;
+        & > span {
+          & > h3 {
+            font-size: 24px;
+          }
+          & > p {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    & > p {
+      font-size: 24px;
+    }
+  }
+
+  .lets-get {
+    &__buttons > button {
+      font-size: 24px;
+      height: 56px;
+      width: 244px;
+    }
+    &__inputs-box {
+      align-items: flex-end;
+      grid-template-columns: 400px 500px;
+    }
+    &__labels {
+      font-size: 24px;
+      align-self: flex-start;
+    }
+    &__inputs {
+      display: flex;
+      align-items: center;
+      font-size: 19px;
+      width: 330px;
+      height: 47px;
+    }
+
+    & > p {
+      font-size: 24px;
+    }
+  }
+  .file-input-button {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 47px;
+  }
+
+  .footer-elements {
+    padding-top: 300px;
+    & > div > a > img {
+      // width: 202px * 0.8;
+      // height: 93px * 0.8;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;

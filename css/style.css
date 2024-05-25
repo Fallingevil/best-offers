@@ -603,13 +603,17 @@ footer {
     width: 504px;
     height: 315px;
   }
-  footer {
-    margin-top: -150px;
+  .footer {
+    position: absolute;
+    top: -50px;
   }
 }
 @media (max-width: 1400px) {
   .what-v-do2 {
-    padding-top: 480px;
+    padding-top: 450px;
+  }
+  .wave-back {
+    height: 190vh;
   }
   .fast-way__text > h2 {
     font-size: 51px;
@@ -626,8 +630,114 @@ footer {
   .lets-get > p {
     font-size: 32px;
   }
-  .footer {
-    margin-top: 150px;
+  .lets-get__inputs-box {
+    align-items: flex-end;
+    grid-template-columns: 450px 500px;
+  }
+}
+@media (max-width: 1220px) {
+  .container {
+    max-width: 960px;
+  }
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__logo > img {
+    width: 84px;
+    height: 88px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .phone-box__icon {
+    height: 38.4px;
+    width: 38.4px;
+  }
+  .phone-box__numbers > a {
+    font-size: 19px;
+  }
+  .company {
+    font-size: 19px;
+  }
+  .what-v-do__tell {
+    gap: 15px;
+  }
+  .what-v-do__tell > p {
+    font-size: 24px;
+  }
+  .what-v-do__tell > a {
+    font-size: 19px;
+  }
+  .what-v-do > span > h3 {
+    font-size: 24px;
+  }
+  .what-v-do > h1 {
+    font-size: 51px;
+  }
+  .what-v-do > p {
+    font-size: 19px;
+  }
+  .what-v-do2_elements {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .what-v-do2__text {
+    width: 70%;
+  }
+  .what-v-do2__text > h3 {
+    font-size: 24px;
+  }
+  .what-v-do2__text > p {
+    font-size: 19px;
+    width: 100%;
+  }
+  .our-mission__card-box {
+    gap: 30px;
+  }
+  .our-mission__card-box > div {
+    width: 403px;
+    height: 252px;
+  }
+  .our-mission__card-box > div > span > h3 {
+    font-size: 24px;
+  }
+  .our-mission__card-box > div > span > p {
+    font-size: 19px;
+  }
+  .our-mission > p {
+    font-size: 24px;
+  }
+  .lets-get__buttons > button {
+    font-size: 24px;
+    height: 56px;
+    width: 244px;
+  }
+  .lets-get__inputs-box {
+    align-items: flex-end;
+    grid-template-columns: 400px 500px;
+  }
+  .lets-get__labels {
+    font-size: 24px;
+    align-self: flex-start;
+  }
+  .lets-get__inputs {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    width: 330px;
+    height: 47px;
+  }
+  .lets-get > p {
+    font-size: 24px;
+  }
+  .file-input-button {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 47px;
+  }
+  .footer-elements {
+    padding-top: 300px;
   }
 }
 @media (max-width: 1199px) {
