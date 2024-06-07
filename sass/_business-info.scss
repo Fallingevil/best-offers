@@ -1,0 +1,130 @@
+@import "./header";
+
+.main-busin-info {
+  padding-inline: 20px;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  padding-bottom: 50px;
+}
+
+.left-side2 {
+  justify-self: center;
+  padding-top: 50px;
+  padding-inline: 20px;
+}
+
+// inputs style of business info
+.business-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.other-label {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.some-reg {
+  position: relative;
+  display: inline-block;
+  & > p {
+    padding-bottom: 15px;
+    font-size: 32px;
+    font-family: $font-family;
+  }
+}
+
+.some-reg input[type="file"] {
+  display: none; /* Hide the actual file input */
+}
+
+.some-reg label {
+  display: inline-block;
+  padding: 15px 80px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-family: $font-family;
+  font-size: 24px;
+  text-align: center;
+}
+
+.some-reg .label-span {
+  display: block;
+  margin-top: 5px;
+  font-size: 19px;
+  font-weight: 400;
+  padding-top: 15px;
+  font-family: $font-family;
+  color: #1b1b1b;
+}
+
+.some-reg label:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.file-pick {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.label-span {
+  font-size: 19px;
+}
+
+#docpicker {
+  border: none;
+  text-align: left;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  padding-bottom: 15px;
+  font-family: $font-family;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 19px;
+  border: 2px solid #00317d;
+  border-radius: 10px;
+}
+
+input:focus {
+  border: 2px solid #0077ff; /* Border color when focused */
+  outline: none; /* Remove default outline */
+}
+
+.under-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  & > h1 {
+    font-size: 40px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(right, #17bff0, #00317d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  & > p {
+    text-align: center;
+    font-size: 24px;
+    font-family: $font-family;
+  }
+}
+
+// rest password

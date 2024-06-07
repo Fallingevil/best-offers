@@ -1,0 +1,348 @@
+$darkblue: #00317d;
+$skyblue: #0384d8;
+$oceanblue: #17bff0;
+$black: #000;
+$lightblack: #555555;
+$gradient: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+$white: #ffffff;
+
+// fonts
+$font-family: "Montserrat", sans-serif;
+$second-family: "Inter", sans-serif;
+$Cunia-family: "Cunia", sans-serif;
+h1 {
+  font-family: $Cunia-family;
+  color: $darkblue;
+}
+h2 {
+  font-family: $Cunia-family;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+header {
+  box-shadow: 0 5px 20px $black;
+}
+
+.header-elem {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    & > img {
+      width: 105px;
+      height: 110px;
+    }
+  }
+  &__btn {
+    position: relative;
+    align-items: center;
+    padding: 20px 22px;
+    border-radius: 60px;
+    border: 2px solid $darkblue;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $font-family;
+    color: $darkblue;
+    background: transparent;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  &__btn:hover {
+    color: white;
+  }
+  &__btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: unset;
+    right: 0;
+    border-radius: 60px;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+    transition: 0.4s all ease-in-out 0s;
+  }
+
+  &__btn:hover::before {
+    left: 0;
+    right: unset;
+    width: 100%;
+  }
+  &__btn:hover .bx {
+    transition: color 0.3s;
+  }
+}
+
+.company {
+  font-size: 24px;
+  color: $black;
+  font-weight: 400;
+  font-family: $font-family;
+}
+
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__icon {
+    height: 48px;
+    width: 48px;
+  }
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__numbers > a {
+    font-size: 24px;
+    color: #000;
+    font-family: $font-family;
+  }
+}
+
+//FOOTER
+
+footer {
+  position: relative;
+  overflow: hidden;
+  margin-top: -300px;
+  display: flex;
+  align-items: end;
+  z-index: -1;
+  justify-content: center;
+  height: 869px;
+  width: 100%;
+}
+.footer {
+  position: absolute;
+  top: -100px;
+}
+
+.footer-elements {
+  padding-top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  & > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1;
+    & > span {
+      justify-content: center;
+      display: flex;
+      width: 413px;
+      padding-left: 20px;
+      flex-direction: column;
+      gap: 15px;
+      & > h3 {
+        font-size: 40px;
+        font-weight: 500;
+        font-family: $font-family;
+        color: $white;
+      }
+      & > a {
+        font-family: $font-family;
+        color: $white;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+    & > a {
+      align-items: center;
+      display: flex;
+      z-index: 1;
+      gap: 23px;
+      padding-inline: 43px;
+      border-right: 2px solid $white;
+    }
+  }
+  & > h5 {
+    padding-top: 30px;
+    text-align: center;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: $font-family;
+    color: $white;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-elem {
+    height: 130px;
+  }
+
+  .header-elem__logo > img {
+    width: 95px;
+    height: 100px;
+  }
+
+  .header-elem__btn {
+    font-size: 22px;
+    padding: 18px 20px;
+  }
+
+  .company {
+    font-size: 22px;
+  }
+
+  .phone-box__icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .phone-box__numbers > a {
+    font-size: 22px;
+  }
+
+  footer {
+    height: 750px;
+  }
+
+  .footer-elements > div > span > h3 {
+    font-size: 36px;
+  }
+
+  .footer-elements > div > span > a {
+    font-size: 22px;
+  }
+
+  .footer-elements > h5 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-elem {
+    height: 110px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-elem__logo {
+    gap: 15px;
+    & > img {
+      width: 85px;
+      height: 90px;
+    }
+  }
+
+  .header-elem__btn {
+    font-size: 20px;
+    padding: 16px 18px;
+  }
+
+  .company {
+    font-size: 20px;
+  }
+
+  .phone-box__icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .phone-box__numbers > a {
+    font-size: 20px;
+  }
+
+  footer {
+    height: 650px;
+  }
+
+  .footer-elements > div > span > h3 {
+    font-size: 32px;
+  }
+
+  .footer-elements > div > span > a {
+    font-size: 20px;
+  }
+
+  .footer-elements > h5 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-elem {
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .header-elem__logo {
+    gap: 10px;
+    & > img {
+      width: 75px;
+      height: 80px;
+    }
+  }
+
+  .header-elem__btn {
+    font-size: 18px;
+    padding: 14px 16px;
+  }
+
+  .company {
+    font-size: 18px;
+  }
+
+  .phone-box {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    &__numbers {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  footer {
+    height: 550px;
+  }
+
+  .footer-elements {
+    padding-top: 400px;
+  }
+
+  .footer-elements > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-elements > div > span {
+    width: auto;
+    padding-left: 0;
+  }
+
+  .footer-elements > div > a {
+    border-right: none;
+  }
+
+  .footer-elements > div > span > h3 {
+    font-size: 28px;
+  }
+
+  .footer-elements > div > span > a {
+    font-size: 18px;
+  }
+
+  .footer-elements > h5 {
+    font-size: 18px;
+  }
+}

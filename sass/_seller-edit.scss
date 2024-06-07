@@ -1,0 +1,141 @@
+@import "./header";
+
+// fonts
+$font-family: "Montserrat", sans-serif;
+$second-family: "Inter", sans-serif;
+$Cunia-family: "Cunia", sans-serif;
+
+.seller-profile {
+  margin-top: 75px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.add-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #00317d;
+  border-radius: 20px;
+  width: 413px;
+  padding: 15px 77px;
+  gap: 20px;
+
+  & > img {
+    width: 90px;
+    height: 90px;
+  }
+  & > p {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: $font-family;
+    background: linear-gradient(to bottom, #17bff0, #00317d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.active-items {
+  & > h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    font-family: $font-family;
+    padding-bottom: 30px;
+  }
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.items-card {
+  display: flex;
+}
+
+.items-info {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #00317d;
+  border-radius: 17px;
+  & > img {
+    padding: 15px;
+  }
+}
+
+.items-details {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+  & > h3 {
+    font-size: 32px;
+    font-family: $font-family;
+    font-weight: 500;
+  }
+}
+
+.item-details_box {
+  padding: 30px 10px 20px 0px;
+  width: 360px;
+  height: 234px;
+  & > p {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: $font-family;
+  }
+}
+
+.item-details_box > p:nth-of-type(2n) {
+  background-color: #eeee;
+}
+
+.items-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 10px;
+  width: 100%;
+  & > button {
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 20px;
+    width: 100%;
+  }
+}
+
+#edit {
+  background: linear-gradient(to bottom, #17bff0, #00317d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 1px solid #00317d;
+  transition: background 0.5s ease-in-out,
+    -webkit-text-fill-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+}
+
+#edit:hover {
+  background: linear-gradient(to bottom, #17bff0, #00317d);
+  -webkit-background-clip: border-box; /* Clip background to the border */
+  -webkit-text-fill-color: white; /* Change text color to white */
+  background-clip: border-box; /* Clip background to the border */
+  color: white; /* Support for browsers that do not support -webkit-text-fill-color */
+}
+
+#delete {
+  color: white;
+  background: red;
+  border: none;
+}
