@@ -9,6 +9,14 @@
     <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="/js/translate.js"></script>
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
@@ -34,7 +42,14 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <a href="#" class="header-elem__btn">Rus</a>
+          <button
+            id="translateButton"
+            data-en="Rus"
+            data-ru="Eng"
+            class="header-elem__btn"
+          >
+            Rus
+          </button>
         </section>
       </div>
     </header>
@@ -43,72 +58,150 @@
         <div class="steps-indic">
           <div class="steps">
             <h2>1</h2>
-            <span>Create account</span>
+            <span data-en="Create account" data-ru="Регистрация"
+              >Create account</span
+            >
           </div>
           <div class="line"></div>
           <div class="step inactive">
             <h2>2</h2>
-            <span>Business information</span>
+            <span data-en="Business information" data-ru="Деловая информация"
+              >Business information</span
+            >
           </div>
           <div class="line"></div>
           <div class="step inactive">
             <h2>3</h2>
-            <span>Application review</span>
+            <span data-en="Application review" data-ru="На рассмотрении"
+              >Application review</span
+            >
           </div>
         </div>
       </section>
       <section class="create-acc">
         <div class="create-acc_buttons">
-          <button class="button active">Sign Up</button>
-          <button class="button">Sign In</button>
+          <a data-en="Sign Up" data-ru="Регистрация" class="button active"
+            >Sign Up</a
+          >
+          <a
+            data-en="Sign In"
+            data-ru="Входит"
+            class="button"
+            href="./login/logIn.html"
+            >Sign In</a
+          >
         </div>
         <div class="create-acc_box">
-          <h2>Create Account</h2>
+          <h2 data-en="Craete Account" data-ru="">Create Account</h2>
 
-          <section class="input-box">
-            <h3>Email</h3>
-            <input
-              required
-              class="inputs"
-              type="email"
-              name="emai"
-              id="email"
-              placeholder="Please enter email, which will be used as your login"
-            />
+          <form id="email-verification-form" class="input-box">
+            <h3 data-en="E-mail" data-ru="Электронная почта">E-mail</h3>
+            <div class="inp">
+              <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Please enter email, which will be used as your login"
+              />
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
+
             <div class="two-elements">
+              <div class="email-verification">
+                <input
+                  required
+                  type="text"
+                  name="email-verification"
+                  id="email-verification"
+                  minlength="5"
+                  maxlength="5"
+                  title="Email verification must be exactly 5 digits"
+                  placeholder="Please enter email verification code"
+                />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+
+              <button
+                type="button"
+                id="send-code"
+                data-en="Send"
+                data-ru="Отправить"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+
+          <form
+            id="password-setup-form"
+            class="input-box_set-up-account"
+            action="/pages/registrations/business-info.html"
+          >
+            <h3
+              data-en="Set up an account password"
+              data-ru="Установите пароль для учетной записи"
+            >
+              Set up an account password
+            </h3>
+            <div class="inp">
               <input
                 required
                 class="inputs"
-                type="text"
-                name="emai verification"
-                id="email-verification"
-                placeholder="Please enter email verification code"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Please enter password"
               />
-              <button type="submit">Send</button>
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
             </div>
-          </section>
 
-          <section class="input-box_set-up-account">
-            <h3>Set up an account password</h3>
-            <input
-              required
-              class="inputs"
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Please enter password"
-            />
-            <input
-              required
-              class="inputs"
-              type="password"
-              name="password"
-              id="check-password"
-              placeholder="Please enter password again"
-            />
-          </section>
+            <div class="inp">
+              <input
+                required
+                class="inputs"
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                placeholder="Please enter password again"
+              />
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
 
-          <button class="btn-creat-acc" id="create-acc">Create Account</button>
+            <button
+              type="button"
+              data-en="Create account"
+              data-ru="Создать учетную запись"
+              class="btn-creat-acc"
+              id="create-acc"
+            >
+              Create account
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -118,20 +211,27 @@
         <div class="footer-elements">
           <div>
             <a href="#"
-              ><img src="/images/back-images/White-logo.png" alt="logo" /><img
-                src="/images/back-images/white-text-logo.png"
+              ><img src="/images/back-images/White-logo.svg" alt="logo" /><img
+                src="/images/back-images/white-text-logo.svg"
                 alt="logo"
             /></a>
             <span>
-              <h3>Contact</h3>
+              <h3 data-en="Contact" data-ru="Контакт">Contact</h3>
               <a href="#">someemailhere@mail.com</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
+          <h5
+            data-en="©2023 Best Offer Deal all rights reserved"
+            data-ru="©2023 Best Offer Deal все права защищены"
+          >
+            ©2023 <big>Best Offer Deal</big> all rights reserved
+          </h5>
         </div>
       </div>
     </footer>
+
+    <script src="/js/validation.js"></script>
   </body>
 </html>

@@ -31,6 +31,7 @@ $Cunia-family: "Cunia", sans-serif;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
   & > h2 {
     color: white;
     font-size: 48px;
@@ -41,12 +42,22 @@ $Cunia-family: "Cunia", sans-serif;
     width: 70px;
     border-radius: 50px;
     background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+    animation: shadow-pulse 2s infinite;
   }
   & > span {
     font-size: 24px;
     font-family: $font-family;
     font-weight: 400;
     color: black;
+  }
+}
+@keyframes shadow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px 5px rgb(48, 128, 155);
+  }
+  50% {
+    box-shadow: none;
   }
 }
 
@@ -84,13 +95,17 @@ $Cunia-family: "Cunia", sans-serif;
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family;
+  color: black;
   width: 305px;
   height: 70px;
   background: transparent;
+  border: none;
   font-size: 32px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-bottom: 2px solid black;
   cursor: pointer;
 }
 
@@ -106,6 +121,7 @@ $Cunia-family: "Cunia", sans-serif;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
   & > h2 {
     color: white;
     font-size: 48px;
@@ -131,20 +147,23 @@ $Cunia-family: "Cunia", sans-serif;
 .btn-creat-acc {
   padding: 10px 15px;
   font-size: 40px;
+  text-align: center;
   font-weight: 700;
+  font-family: $font-family;
   border: none;
   color: white;
   border-radius: 10px;
   cursor: pointer;
   background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
 }
+
 .input-box {
   display: flex;
   flex-direction: column;
   &_set-up-account {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     & > h3 {
       font-size: 32px;
       padding-bottom: 30px;
@@ -164,11 +183,17 @@ $Cunia-family: "Cunia", sans-serif;
 }
 
 .two-elements {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   & > button {
+    width: 50%;
     font-size: 24px;
+    grid-column: 2;
+    font-family: $font-family;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     border: none;
     color: white;
@@ -179,18 +204,6 @@ $Cunia-family: "Cunia", sans-serif;
 }
 
 // inputs style of creating-account
-
-.input {
-  padding: 10px 15px;
-  font-size: 19px;
-  border: 2px solid #00317d;
-  border-radius: 10px;
-}
-
-.input:focus {
-  border: 2px solid #0077ff; /* Border color when focused */
-  outline: none; /* Remove default outline */
-}
 
 //LOGIN
 
@@ -252,6 +265,15 @@ $Cunia-family: "Cunia", sans-serif;
   }
 }
 
+.email-verification {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  & > input {
+    width: 100%;
+  }
+}
+
 //forgot password
 
 .hidden {
@@ -303,6 +325,68 @@ $Cunia-family: "Cunia", sans-serif;
   }
   & > input {
     margin-bottom: 20px;
+  }
+}
+#send-code {
+  height: 46px;
+}
+
+//errors
+
+.error {
+  position: absolute;
+  margin-top: 65px;
+  font-size: 16px;
+  font-family: $font-family;
+  color: red;
+  padding: 2px 0px;
+}
+
+.error-icon {
+  margin-left: -6px;
+  color: red;
+}
+
+.success-icon {
+  margin-left: -6px;
+  color: rgb(8, 148, 8);
+}
+
+.inp {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 0 35px 0 15px;
+  border: 2px solid $darkblue;
+  margin-bottom: 18px;
+  &::placeholder {
+    color: $lightblack;
+    text-align: center;
+    font-size: 24px;
+  }
+  & > input {
+    width: 100%;
+    background: transparent;
+    border: none;
+  }
+}
+
+.email-verification {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 0 35px 0 15px;
+  border: 2px solid $darkblue;
+  &::placeholder {
+    color: $lightblack;
+    text-align: center;
+    font-size: 24px;
+  }
+  & > input {
+    width: 100%;
+    border: none;
   }
 }
 

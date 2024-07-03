@@ -12,6 +12,14 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script defer src="/js/translate.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -34,103 +42,218 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <a href="#" class="header-elem__btn">Rus</a>
+          <button
+            class="header-elem__btn"
+            id="translateButton"
+            data-en="Rus"
+            data-ru="Eng"
+          >
+            Rus
+          </button>
         </section>
       </div>
     </header>
     <main id="content">
       <section class="login">
         <div class="login_buttons">
-          <button class="button">Sign Up</button>
-          <button class="button active">Sign In</button>
+          <a
+            href="/pages/registrations/create-account.html"
+            class="button"
+            data-en="Sign Up"
+            data-ru="Регистрация"
+            >Sign Up</a
+          >
+          <button data-en="Sign In" data-ru="Входит" class="button active">
+            Sign In
+          </button>
         </div>
         <div class="login_box">
-          <h2>Sign into your account</h2>
+          <h2 data-en="Sign into your account" data-ru="Вход в учетную запись">
+            Sign into your account
+          </h2>
 
           <section class="input-box">
-            <h3>E-mail</h3>
-            <input
-              required
-              class="inputs"
-              type="email"
-              name="emai"
-              id="email"
-              placeholder="Please enter your email"
-            />
+            <h3 data-en="E-mail" data-ru="Электронная почта">E-mail</h3>
+            <div class="inp">
+              <input
+                required
+                class="inputs"
+                type="email"
+                name="emai"
+                id="login-email"
+                placeholder="example@gmail.com"
+              />
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
             <span>
-              <h3>Password</h3>
-              <a href="#">Forgot Password?</a>
+              <h3 data-en="Password" data-ru="Пароль">Password</h3>
+              <a
+                id="forgot-password-link"
+                href="#"
+                data-en="Forgot Password?"
+                data-ru="Забили пароль?"
+                >Forgot Password?</a
+              >
             </span>
-            <input
-              required
-              class="inputs"
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Please enter your password"
-            />
+            <div class="inp">
+              <input
+                required
+                class="inputs"
+                type="password"
+                name="password"
+                id="login-password"
+                placeholder="Please enter your password"
+              />
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
           </section>
 
-          <button class="btn-creat-acc" id="login">Sign In</button>
+          <button
+            type="button"
+            data-en="Sign In"
+            data-ru="Войти"
+            class="btn-creat-acc"
+            id="login"
+          >
+            Sign In
+          </button>
         </div>
       </section>
 
       <!-- Forgot password? -->
       <section class="forgot-password hidden">
         <div class="reset">
-          <a href="#"> <img src="/images/icons/left.svg" alt="back" /></a>
-          <h1>Reset Password</h1>
+          <a id="back-to-login" href="#">
+            <img src="/images/icons/left.svg" alt="back"
+          /></a>
+          <h1 data-en="Reset Password" data-ru="Сбросить пароль">
+            Reset Password
+          </h1>
         </div>
         <div class="forgot-elements">
-          <p>
+          <p
+            data-en="Enter the email associated with your account and we’ll send you an
+          email with verification code to reset your password"
+            data-ru="Введите адрес электронной почты, связанный с вашей учетной записью, и мы отправим вам
+            электронное письмо с кодом подтверждения для сброса пароля"
+          >
             Enter the email associated with your account and we’ll send you an
             email with verification code to reset your password
           </p>
 
-          <section class="input-box">
-            <h3>Email</h3>
-            <input
-              required
-              class="inputs"
-              type="email"
-              name="emai"
-              id="email"
-              placeholder="Please enter email, which will be used as your login"
-            />
-            <div class="two-elements">
+          <form action="/pages/seller/adding-product.html" class="input-box">
+            <h3 data-en="E-mail" data-ru="Электронная почта">E-mail</h3>
+            <div class="inp">
               <input
                 required
                 class="inputs"
-                type="text"
-                name="emai verification"
-                id="email-verification"
-                placeholder="Please enter email verification code"
+                type="email"
+                name="emai"
+                id="reset-email"
+                placeholder="Please enter email, which will be used as your login"
               />
-              <button type="submit">Send</button>
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
+
+            <div class="two-elements">
+              <div class="inp">
+                <input
+                  required
+                  class="inputs"
+                  type="text"
+                  name="emai verification"
+                  id="email-verification"
+                  placeholder="Please enter email verification code"
+                />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+              <button
+                id="send-code"
+                type="button"
+                data-en="Send"
+                data-ru="Отправить"
+              >
+                Send
+              </button>
             </div>
 
             <div class="forgot-password-input">
-              <h3>Set up an account password</h3>
-              <input
-                required
-                class="inputs"
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Please enter password"
-              />
-              <input
-                required
-                class="inputs"
-                type="password"
-                name="password"
-                id="check-password"
-                placeholder="Please enter password again"
-              />
+              <h3
+                data-en="Set up an account password"
+                data-ru="Установите пароль учетной записи"
+              >
+                Set up an account password
+              </h3>
+              <div class="inp">
+                <input
+                  required
+                  class="inputs"
+                  type="password"
+                  name="password"
+                  id="confirm-password"
+                  placeholder="Please enter password"
+                />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+
+              <div class="inp">
+                <input
+                  required
+                  class="inputs"
+                  type="password"
+                  name="password"
+                  id="reset-password"
+                  placeholder="Please enter password again"
+                />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
             </div>
 
-            <button class="btn-creat-acc" id="create-acc">Reset</button>
-          </section>
+            <button
+              data-en="Reset"
+              data-ru="Сбросить"
+              class="btn-creat-acc"
+              id="create-acc"
+            >
+              Reset
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -141,20 +264,26 @@
         <div class="footer-elements">
           <div>
             <a href="#"
-              ><img src="/images/back-images/White-logo.png" alt="logo" /><img
-                src="/images/back-images/white-text-logo.png"
+              ><img src="/images/back-images/White-logo.svg" alt="logo" /><img
+                src="/images/back-images/white-text-logo.svg"
                 alt="logo"
             /></a>
             <span>
-              <h3>Contact</h3>
+              <h3 data-en="Contact" data-ru="Контакт">Contact</h3>
               <a href="#">someemailhere@mail.com</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
+          <h5
+            data-en="©2023 Best Offer Deal all rights reserved"
+            data-ru="©2023 Best Offer Deal все права защищены"
+          >
+            ©2023 <big>Best Offer Deal</big> all rights reserved
+          </h5>
         </div>
       </div>
     </footer>
+    <script src="/js/login.js"></script>
   </body>
 </html>

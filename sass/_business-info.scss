@@ -103,10 +103,12 @@ input {
 }
 
 input:focus {
-  border: 2px solid #0077ff; /* Border color when focused */
+  border: 0px; /* Border color when focused */
+  background: transparent;
   outline: none; /* Remove default outline */
 }
 
+// UNDER REVIEW //
 .under-review {
   display: flex;
   flex-direction: column;
@@ -124,6 +126,11 @@ input:focus {
     text-align: center;
     font-size: 24px;
     font-family: $font-family;
+  }
+  & > span {
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 400;
   }
 }
 

@@ -12,12 +12,13 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script defer src="/js/translate.js"></script>
   </head>
   <body>
     <header>
       <div class="container">
         <section class="header-elem">
-          <a href="index.html" class="header-elem__logo">
+          <a href="/index.html" class="header-elem__logo">
             <img src="/images/logo-web.svg" alt="logo" />
             <img src="/images/logo-text.svg" alt="text" />
           </a>
@@ -35,9 +36,20 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
+          <button
+            href="#"
+            class="header-elem__btn"
+            id="translateButton"
+            data-en="Rus"
+            data-ru="Eng"
+          >
+            Rus
+          </button>
           <a
             href="pages/registrations/create-account.html"
             class="header-elem__btn"
+            data-en="Profile"
+            data-ru="Кабинет"
           >
             Profile</a
           >
@@ -48,10 +60,10 @@
     <main class="seller-profile">
       <a href="#" class="add-items">
         <img src="/images/icons/plus.svg" alt="add" />
-        <p>Add a new Item</p>
+        <p data-en="Add a new Item" data-ru="Добавить товар">Add a new Item</p>
       </a>
       <section class="active-items">
-        <h3>Active Items</h3>
+        <h3 data-en="Active Items" data-ru="Активные товары">Active Items</h3>
         <div id="items">
           <div class="items-card">
             <div class="items-info">
@@ -69,8 +81,10 @@
               </div>
             </div>
             <div class="items-btn">
-              <button id="edit">Edit <i class="bx bxs-pencil"></i></button>
-              <button id="delete">
+              <button id="edit" data-en="Edit" data-ru="Изменение">
+                Edit <i class="bx bxs-pencil"></i>
+              </button>
+              <button id="delete" data-en="delete" data-ru="Удалить">
                 Delete <i class="bx bxs-trash-alt"></i>
               </button>
             </div>
@@ -91,8 +105,10 @@
               </div>
             </div>
             <div class="items-btn">
-              <button id="edit">Edit <i class="bx bxs-pencil"></i></button>
-              <button id="delete">
+              <button id="edit" data-en="Edit" data-ru="Изменение">
+                Edit <i class="bx bxs-pencil"></i>
+              </button>
+              <button id="delete" data-en="delete" data-ru="Удалить">
                 Delete <i class="bx bxs-trash-alt"></i>
               </button>
             </div>
@@ -106,18 +122,23 @@
         <div class="footer-elements">
           <div>
             <a href="#"
-              ><img src="/images/back-images/White-logo.png" alt="logo" /><img
-                src="/images/back-images/white-text-logo.png"
+              ><img src="/images/back-images/White-logo.svg" alt="logo" /><img
+                src="/images/back-images/white-text-logo.svg"
                 alt="logo"
             /></a>
             <span>
-              <h3>Contact</h3>
+              <h3 data-en="Contact" data-ru="Контакт">Contact</h3>
               <a href="#">someemailhere@mail.com</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
+          <h5
+            data-en="©2023 Best Offer Deal all rights reserved"
+            data-ru="©2023 Best Offer Deal все права защищены"
+          >
+            ©2023 <big>Best Offer Deal</big> all rights reserved
+          </h5>
         </div>
       </div>
     </footer>

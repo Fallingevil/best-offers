@@ -13,6 +13,13 @@
       rel="stylesheet"
     />
     <script defer src="/js/translate.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -35,69 +42,48 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <a
+          <button
             href="#"
             class="header-elem__btn"
             id="translateButton"
             data-en="Rus"
             data-ru="Eng"
-            >Rus</a
           >
+            Rus
+          </button>
         </section>
       </div>
     </header>
-    <main class="main-busin-info">
-      <section class="left-side2">
-        <div class="steps-indic">
-          <div class="step inactive">
-            <h2>1</h2>
-            <span data-en="Create account" data-ru="Регистрация"
-              >Create account</span
-            >
-          </div>
-          <div class="line"></div>
-          <div class="step inactive">
-            <h2>2</h2>
-            <span data-en="Business information" data-ru="Деловая информация"
-              >Business information</span
-            >
-          </div>
-          <div class="line"></div>
-          <div class="steps">
-            <h2>3</h2>
-            <span data-en="Application review" data-ru="На рассмотрении"
-              >Application review</span
-            >
-          </div>
-        </div>
-      </section>
-      <section class="under-review">
-        <h1 data-en="Application review!" data-ru="Рассматривается!">
-          Under Review!
+    <main>
+      <div class="err-page">
+        <h1
+          data-en="Oops something went wrong!"
+          data-ru="УУПС ЧТО-ТО ПОШЛО НЕ ТАК!"
+        >
+          Oops something went wrong!
         </h1>
-        <p
-          data-en="It might take 2-3 working days. You will recieve an email with a
-        response."
-          data-ru="Это может занять 2-3 рабочих дней. Вы получите электронное письмо с
-          ответом."
-        >
-          It might take 2-3 working days. You will recieve an email with a
-          response.
-        </p>
         <span
-          data-en="Thank you for your patience!"
-          data-ru="Спасибо за ваше терпение!"
-          >Thank you for your patience!</span
+          data-en="This page recently deleted"
+          data-ru="Это страница недавно удалена"
+          >This page recently deleted
+        </span>
+        <a
+          class="go-home"
+          data-en="GO HOME!"
+          data-ru="ГЛАВНАЯ СТРАНИЦА"
+          href="../index.html"
+          >GO HOME!</a
         >
-      </section>
+      </div>
     </main>
+
     <footer>
       <img class="footer" src="/images/back-images/union.svg" alt="logo" />
       <div class="container">
         <div class="footer-elements">
           <div>
             <a href="#"
-              ><img src="/images/back-images/White-logo.svg" alt="logo" /><img
+              ><img src="/images/back-images/white-logo.svg" alt="logo" /><img
                 src="/images/back-images/white-text-logo.svg"
                 alt="logo"
             /></a>

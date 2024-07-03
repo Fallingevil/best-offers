@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="images/logo-web.svg" />
     <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/translate.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -21,9 +22,15 @@
             <img src="images/logo-web.svg" alt="logo" />
             <img src="images/logo-text.svg" alt="text" />
           </a>
-          <a href="#" class="company">Company</a>
+          <a
+            href="./pages/404-error.html"
+            class="company"
+            data-en="Company"
+            data-ru="Компания"
+            >Company</a
+          >
           <div class="phone-box">
-            <a href="tel: +998(90)9999999">
+            <a href="tel:+998909999999">
               <img
                 class="phone-box__icon"
                 src="images/icons/phone.svg"
@@ -31,17 +38,35 @@
               />
             </a>
             <span class="phone-box__numbers">
-              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
-              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+              <a
+                href="tel:+998909999999"
+                data-en="+998 (90) 999-99-99"
+                data-ru="+998 (90) 999-99-99"
+                >+998 (90) 999-99-99</a
+              >
+              <a
+                href="tel:+998909999999"
+                data-en="+998 (90) 999-99-99"
+                data-ru="+998 (90) 999-99-99"
+                >+998 (90) 999-99-99</a
+              >
             </span>
           </div>
           <a
             href="pages/registrations/create-account.html"
             class="header-elem__btn"
           >
-            Sign Up <i class="bx bxs-plus-circle"></i
-          ></a>
-          <a href="#" class="header-elem__btn">Rus</a>
+            <span data-en="Sign Up" data-ru="Зарегистрироваться">Sign Up</span
+            ><i class="bx bxs-plus-circle"></i>
+          </a>
+          <button
+            class="header-elem__btn"
+            id="translateButton"
+            data-en="Rus"
+            data-ru="Eng"
+          >
+            Rus
+          </button>
         </section>
       </div>
     </header>
@@ -51,14 +76,21 @@
         <section class="what-v-do">
           <span>
             <div class="what-v-do__line"></div>
-            <h3>Work With<span> Best Offer Deal</span></h3>
+            <h3 data-en="Work With" data-ru="Работать с">Work With</h3>
+            <span data-en="Best Offer Deal" data-ru="Лучшее предложение"
+              >Best Offer Deal</span
+            >
           </span>
-
-          <h1>
-            INOVATE SOLUTION FOR <br />
-            BUSINESS SUCCESS
+          <h1
+            data-en="INOVATE SOLUTION FOR BUSINESS SUCCESS"
+            data-ru="ИННОВАЦИОННОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА"
+          >
+            INOVATE SOLUTION FOR BUSINESS SUCCESS
           </h1>
-          <p>
+          <p
+            data-en="We provide services and solutions, and supply any needs to our partners and government institutions. We focus on the best and honest, and promptest services to our clients, and treat our suppliers and partners."
+            data-ru="Мы предоставляем услуги и решения, а также удовлетворяем любые потребности наших партнеров и государственных учреждений. Мы сосредоточены на лучших, честных и самых оперативных услугах для наших клиентов и на уважительном отношении к нашим поставщикам и партнерам."
+          >
             We provide services and solutions, and supply any needs to our
             partners and government institutions. We focus on the best and
             honest, and promptest services to our clients, and treat our
@@ -68,14 +100,23 @@
             <a
               href="pages/registrations/create-account.html"
               class="what-v-do__btn"
+              data-en="Work Together"
+              data-ru="Работайте вместе"
             >
-              Work Together <i class="bx bxs-plus-circle"></i
-            ></a>
+              Work Together <i class="bx bxs-plus-circle"></i>
+            </a>
             <div class="what-v-do__numbers">
               <img src="images/icons/phone.svg" alt="icon" />
               <span class="what-v-do__tell">
-                <p>Call Everyday</p>
-                <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+                <p data-en="Call Everyday" data-ru="Звоните каждый день">
+                  Call Everyday
+                </p>
+                <a
+                  href="tel:+998909999999"
+                  data-en="+998 (90) 999-99-99"
+                  data-ru="+998 (90) 999-99-99"
+                  >+998 (90) 999-99-99</a
+                >
               </span>
             </div>
           </div>
@@ -87,12 +128,20 @@
           <div class="container">
             <div class="what-v-do2_elements">
               <span class="what-v-do2__text">
-                <h2>WHAT WE DO?</h2>
-                <h3>
+                <h2 data-en="WHAT WE DO?" data-ru="ЧТО МЫ ДЕЛАЕМ?">
+                  WHAT WE DO?
+                </h2>
+                <h3
+                  data-en="Provide consulting services to any type and size clients."
+                  data-ru="Предоставляем консультационные услуги клиентам любого типа и размера."
+                >
                   Provide consulting services to any type <br />
                   and size clients.
                 </h3>
-                <p>
+                <p
+                  data-en="Supply with the highest quality any type of equipment and parts, construction materials and products, office supplies and appliances, household goods and products, machinery and transportation and parts for them"
+                  data-ru="Поставляем высококачественное оборудование и запчасти, строительные материалы и изделия, офисные принадлежности и приборы, бытовые товары и изделия, машины и транспортные средства, а также запчасти к ним."
+                >
                   Supply with the highest quality any type of equipment and
                   parts, construction materials and products, office supplies
                   and appliances, household goods and products, machinery and
@@ -107,22 +156,28 @@
       <div class="container">
         <section class="fast-way">
           <div class="fast-way__text">
-            <h2>
-              THE FASTEST WAY TO ACHIVE YOUR <span> BUSINESS SUCCESS</span>
+            <h2
+              data-en="THE FASTEST WAY TO ACHIVE YOUR BUSINESS SUCCESS"
+              data-ru="САМЫЙ БЫСТРЫЙ ПУТЬ К УСПЕХУ ВАШЕГО БИЗНЕСА"
+            >
+              THE FASTEST WAY TO ACHIVE YOUR BUSINESS SUCCESS
             </h2>
+
             <span>
               <a
                 href="pages/registrations/create-account.html"
                 class="what-v-do__btn"
+                data-en="Work Together"
+                data-ru="Работайте вместе"
               >
-                Work Together <i class="bx bxs-plus-circle"></i
-              ></a>
+                Work Together <i class="bx bxs-plus-circle"></i>
+              </a>
             </span>
           </div>
           <div class="fast-way__img">
             <img
               class="list-dude"
-              src="images/back-images/Order processed 2.svg"
+              src="images/back-images/Order processed 2.png"
               alt="logo"
             />
           </div>
@@ -132,14 +187,27 @@
           <div class="our-mission__back">
             <img src="images/back-images/Group.svg" alt="logo" />
           </div>
-          <h2>OUR MISSIONS</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <h2 data-en="OUR MISSIONS" data-ru="НАШИ МИССИИ">OUR MISSIONS</h2>
+          <p
+            data-en="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+            data-ru="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
           <div class="our-mission__card-box">
             <div>
               <img src="images/icons/Group_fill.svg" alt="icon" />
               <span>
-                <h3>Provide consulting</h3>
-                <p>
+                <h3
+                  data-en="Provide consulting"
+                  data-ru="Предоставляем консультации"
+                >
+                  Provide consulting
+                </h3>
+                <p
+                  data-en="We provide services and solutions, and supply any needs to our partners and government institutions. We focus on the best and honest, and promptest services to our clients, and treat our suppliers and partners."
+                  data-ru="Мы предоставляем услуги и решения, а также удовлетворяем любые потребности наших партнеров и государственных учреждений. Мы сосредоточены на лучших, честных и самых оперативных услугах для наших клиентов и на уважительном отношении к нашим поставщикам и партнерам."
+                >
                   We provide services and solutions, and supply any needs to our
                   partners and government institutions. We focus on the best and
                   honest, and promptest services to our clients, and treat our
@@ -150,8 +218,16 @@
             <div>
               <img src="images/icons/Safe.svg" alt="icon" />
               <span>
-                <h3>Safe deal & Transaction</h3>
-                <p>
+                <h3
+                  data-en="Safe deal & Transaction"
+                  data-ru="Безопасная сделка и транзакция"
+                >
+                  Safe deal & Transaction
+                </h3>
+                <p
+                  data-en="In every transaction we undertake, we prioritize the implementation of comprehensive security measures and thorough verification processes, ensuring that each deal is conducted with the utmost safety and reliability."
+                  data-ru="В каждой сделке, которую мы заключаем, мы приоритетно внедряем комплексные меры безопасности и тщательные процессы проверки, чтобы каждая сделка проходила с максимальной безопасностью и надежностью."
+                >
                   In every transaction we undertake, we prioritize the
                   implementation of comprehensive security measures and thorough
                   verification processes, ensuring that each deal is conducted
@@ -162,8 +238,13 @@
             <div>
               <img src="images/icons/Idea.svg" alt="icon" />
               <span>
-                <h3>Services & Solutions</h3>
-                <p>
+                <h3 data-en="Services & Solutions" data-ru="Услуги и решения">
+                  Services & Solutions
+                </h3>
+                <p
+                  data-en="Supply with the highest quality any type of equipment and parts, construction materials and products, office supplies and appliances, household goods and products, machinery and transportation and parts for them"
+                  data-ru="Поставляем высококачественное оборудование и запчасти, строительные материалы и изделия, офисные принадлежности и приборы, бытовые товары , машины и транспортные средства."
+                >
                   Supply with the highest quality any type of equipment and
                   parts, construction materials and products, office supplies
                   and appliances, household goods and products, machinery and
@@ -174,8 +255,16 @@
             <div>
               <img src="images/icons/Group_fill.svg" alt="icon" />
               <span>
-                <h3>Provide consulting</h3>
-                <p>
+                <h3
+                  data-en="Provide consulting"
+                  data-ru="Предоставляем консультации"
+                >
+                  Provide consulting
+                </h3>
+                <p
+                  data-en="Supply with the highest quality any type of equipment and parts, construction materials and products, office supplies and appliances, household goods and products, machinery and transportation and parts for them"
+                  data-ru="Поставляем высококачественное оборудование и запчасти, строительные материалы и изделия, офисные принадлежности и приборы, бытовые товары и изделия, машины и транспортные средства, а также запчасти к ним."
+                >
                   Supply with the highest quality any type of equipment and
                   parts, construction materials and products, office supplies
                   and appliances, household goods and products, machinery and
@@ -187,18 +276,33 @@
         </section>
 
         <section class="lets-get">
-          <h2>LET'S GET STARTED</h2>
-          <p>Sign Up into system to start</p>
+          <h2 data-en="LET'S GET STARTED" data-ru="ДАВАЙТЕ НАЧНЕМ">
+            LET'S GET STARTED
+          </h2>
+          <p
+            data-en="Sign Up into system to start"
+            data-ru="Зарегистрируйтесь в системе, чтобы начать"
+          >
+            Sign Up into system to start
+          </p>
           <div class="lets-get__buttons">
-            <button>Sign Up</button>
-            <button>Log In</button>
-            <button>Supplier</button>
-            <button>Customer</button>
+            <button data-en="Sign Up" data-ru="Зарегистрироваться">
+              Sign Up
+            </button>
+            <button data-en="Log In" data-ru="Войти">Log In</button>
+            <button data-en="Supplier" data-ru="Поставщик">Supplier</button>
+            <button data-en="Customer" data-ru="Клиент">Customer</button>
           </div>
 
           <div class="lets-get__inputs-box">
             <div class="email-input">
-              <label class="lets-get__labels" for="emai">E-mail</label>
+              <label
+                class="lets-get__labels"
+                for="email"
+                data-en="E-mail"
+                data-ru="Электронная почта"
+                >E-mail</label
+              >
               <input
                 class="lets-get__inputs"
                 type="email"
@@ -210,7 +314,11 @@
             </div>
 
             <div class="sell-input">
-              <label class="lets-get__labels" for="what-do-u-sell"
+              <label
+                class="lets-get__labels"
+                for="what-do-u-sell"
+                data-en="What do you Sell?"
+                data-ru="Что вы продаете?"
                 >What do you Sell?</label
               >
               <input
@@ -223,7 +331,11 @@
             </div>
 
             <div class="number-input">
-              <label class="lets-get__labels" for="phone-number"
+              <label
+                class="lets-get__labels"
+                for="phone-number"
+                data-en="Phone Number"
+                data-ru="Номер телефона"
                 >Phone Number</label
               >
               <input
@@ -247,11 +359,20 @@
                 accept=".pdf, .doc, .docx"
                 required
               />
-              <span class="lets-get__labels"
+              <span
+                class="lets-get__labels"
+                data-en="Upload your certificate"
+                data-ru="Загрузите ваш сертификат"
                 >Upload your certificate
-                <p>(PDF, DOC, DOCX)</p></span
+                <p data-en="(PDF, DOC, DOCX)" data-ru="(PDF, DOC, DOCX)">
+                  (PDF, DOC, DOCX)
+                </p></span
               >
-              <label for="certificate" class="file-input-button"
+              <label
+                for="certificate"
+                class="file-input-button"
+                data-en="Choose File"
+                data-ru="Выберите файл"
                 >Choose File</label
               >
             </div>
@@ -265,18 +386,23 @@
         <div class="footer-elements">
           <div>
             <a href="#"
-              ><img src="images/back-images/White-logo.png" alt="logo" /><img
-                src="images/back-images/white-text-logo.png"
+              ><img src="images/back-images/white-logo.svg" alt="logo" /><img
+                src="images/back-images/white-text-logo.svg"
                 alt="logo"
             /></a>
             <span>
-              <h3>Contact</h3>
+              <h3 data-en="Contact" data-ru="Контакт">Contact</h3>
               <a href="#">someemailhere@mail.com</a>
-              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
-              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+              <a href="tel:+998909999999">+998 (90) 999-99-99</a>
+              <a href="tel:+998909999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
+          <h5
+            data-en="©2023 Best Offer Deal all rights reserved"
+            data-ru="©2023 Best Offer Deal все права защищены"
+          >
+            ©2023 <big>Best Offer Deal</big> all rights reserved
+          </h5>
         </div>
       </div>
     </footer>

@@ -8,6 +8,10 @@
     <link rel="apple-touch-icon" href="images/logo-web.svg" />
     <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- LOGIC OF THIS PAGE -->
+    <script defer src="/js/adding-products.js"></script>
+    <!-- TRANSLATION JS -->
+    <script defer src="/js/translate.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -35,9 +39,20 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
+          <button
+            href="#"
+            class="header-elem__btn"
+            id="translateButton"
+            data-en="Rus"
+            data-ru="Eng"
+          >
+            Rus
+          </button>
           <a
             href="pages/registrations/create-account.html"
             class="header-elem__btn"
+            data-en="Profile"
+            data-ru="Кабинет"
           >
             Profile</a
           >
@@ -48,7 +63,13 @@
       <main class="custom-main">
         <section class="adding-product">
           <div>
-            <label class="adding-label" for="text">Product name</label>
+            <label
+              class="adding-label"
+              for="text"
+              data-en="Product name"
+              data-ru="Имя продукта"
+              >Product name</label
+            >
             <input
               class="adding-input"
               type="text"
@@ -56,15 +77,33 @@
             />
           </div>
           <div>
-            <label class="adding-label" for="text">Quantity</label>
+            <label
+              class="adding-label"
+              for="text"
+              data-en="Quantity"
+              data-ru="Количество"
+              >Quantity</label
+            >
             <input class="adding-input" type="text" placeholder="999pcs/L" />
           </div>
           <div>
-            <label class="adding-label" for="text">Price</label>
+            <label
+              class="adding-label"
+              for="text"
+              data-en="Price"
+              data-ru="Цена"
+              >Price</label
+            >
             <input class="adding-input" type="text" placeholder="999sums" />
           </div>
           <div>
-            <label class="adding-label" for="text">Shipping time</label>
+            <label
+              class="adding-label"
+              for="text"
+              data-en="Shipping time"
+              data-ru="Время доставки"
+              >Shipping time</label
+            >
             <input
               class="adding-input"
               type="text"
@@ -72,7 +111,13 @@
             />
           </div>
           <div>
-            <label class="adding-label" for="text">Extra information</label>
+            <label
+              class="adding-label"
+              for="text"
+              data-en="Extra information"
+              data-ru="Доп. информация"
+              >Extra information</label
+            >
             <input
               class="adding-input"
               type="text"
@@ -81,58 +126,75 @@
           </div>
 
           <div class="some-reg">
-            <p>Photos and videos</p>
+            <p data-en="Photos and Videos" data-ru="Фото и Видео">
+              Photos and videos
+            </p>
             <span class="photo-pick">
               <input type="file" id="photopicker" accept=".jpg,.jpeg, .mp4" />
-              <label for="docpicker" id="photo-label"> Add file </label>
-              <span class="label-span"
+              <label
+                for="docpicker"
+                id="photo-label"
+                data-en="Add file"
+                data-ru="Добавить файл"
+              >
+                Add file
+              </label>
+              <span
+                class="label-span"
+                data-en="File formats: JPG, PNG, mp4, GIF 10MB"
+                data-ru="Нужние требование: JPG, PNG, mp4, GIF 10MB"
                 >File formats: JPG, PNG, mp4, GIF 10MB</span
               >
             </span>
           </div>
         </section>
         <section class="product-category">
-          <h3>Product category (choose one)</h3>
+          <h3
+            data-en="Product category (choose one)"
+            data-ru="Категория продукта (только один вариант)"
+          >
+            Product category (choose one)
+          </h3>
           <div class="categories">
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
-            <span id="category"
-              >Category1
-              <div id="checkbox"></div
-            ></span>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
+            <span id="category" data-en="Category1" data-ru="Категория"
+              >Category1</span
+            >
+            <div id="checkbox"></div>
           </div>
 
-          <button id="save">Save</button>
+          <button id="save" data-en="save" data-ru="Сохранить">Save</button>
         </section>
       </main>
     </div>
@@ -143,28 +205,25 @@
         <div class="footer-elements">
           <div>
             <a href="#"
-              ><img src="/images/back-images/White-logo.png" alt="logo" /><img
-                src="/images/back-images/white-text-logo.png"
+              ><img src="/images/back-images/White-logo.svg" alt="logo" /><img
+                src="/images/back-images/white-text-logo.svg"
                 alt="logo"
             /></a>
             <span>
-              <h3>Contact</h3>
+              <h3 data-en="Contact" data-ru="Контакт">Contact</h3>
               <a href="#">someemailhere@mail.com</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
+          <h5
+            data-en="©2023 Best Offer Deal all rights reserved"
+            data-ru="©2023 Best Offer Deal все права защищены"
+          >
+            ©2023 <big>Best Offer Deal</big> all rights reserved
+          </h5>
         </div>
       </div>
     </footer>
-
-    <script>
-      document.querySelectorAll("#checkbox").forEach(function (element) {
-        element.addEventListener("click", function () {
-          this.classList.toggle("clicked");
-        });
-      });
-    </script>
   </body>
 </html>
