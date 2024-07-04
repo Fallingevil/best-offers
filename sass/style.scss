@@ -196,7 +196,7 @@ body {
       width: 413px;
       height: 543px;
       animation: showTwo 0.7s linear 1 forwards;
-      transform: translateX(100%);
+      transform: translateX(150%);
     }
   }
 
@@ -267,6 +267,7 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   &__text {
     display: flex;
     flex-direction: column;
@@ -275,6 +276,9 @@ body {
       color: $black;
       font-size: 54px;
       font-weight: 700;
+      filter: blur(10px);
+      transform: translateX(100%);
+      animation: fastShow 0.7s linear 1 forwards;
     }
     & > h2 > span {
       background: linear-gradient(to left, #17bff0, #00317d);
@@ -289,6 +293,22 @@ body {
   width: 700px;
   height: 739px;
   padding-top: 0px;
+  filter: blur(10px);
+  transform: translateY(100%);
+  animation: listDude 0.7s linear 1 forwards;
+}
+
+@keyframes fastShow {
+  to {
+    transform: translateX(0);
+    filter: blur(0px);
+  }
+}
+@keyframes listDude {
+  to {
+    transform: translateY(0);
+    filter: blur(0px);
+  }
 }
 
 .our-mission {
