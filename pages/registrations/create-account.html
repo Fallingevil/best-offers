@@ -15,7 +15,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script defer src="/js/translate.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="/js/connection-backend/create-acc.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -42,14 +47,7 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <button
-            id="translateButton"
-            data-en="Rus"
-            data-ru="Eng"
-            class="header-elem__btn"
-          >
-            Rus
-          </button>
+          <button class="header-elem__btn">Rus</button>
         </section>
       </div>
     </header>
@@ -58,31 +56,23 @@
         <div class="steps-indic">
           <div class="steps">
             <h2>1</h2>
-            <span data-en="Create account" data-ru="Регистрация"
-              >Create account</span
-            >
+            <span>Create account</span>
           </div>
           <div class="line"></div>
           <div class="step inactive">
             <h2>2</h2>
-            <span data-en="Business information" data-ru="Деловая информация"
-              >Business information</span
-            >
+            <span>Business information</span>
           </div>
           <div class="line"></div>
           <div class="step inactive">
             <h2>3</h2>
-            <span data-en="Application review" data-ru="На рассмотрении"
-              >Application review</span
-            >
+            <span>Application review</span>
           </div>
         </div>
       </section>
       <section class="create-acc">
         <div class="create-acc_buttons">
-          <a data-en="Sign Up" data-ru="Регистрация" class="button active"
-            >Sign Up</a
-          >
+          <a class="button active">Sign Up</a>
           <a
             data-en="Sign In"
             data-ru="Входит"
@@ -92,10 +82,10 @@
           >
         </div>
         <div class="create-acc_box">
-          <h2 data-en="Craete Account" data-ru="">Create Account</h2>
+          <h2>Create Account</h2>
 
           <form id="email-verification-form" class="input-box">
-            <h3 data-en="E-mail" data-ru="Электронная почта">E-mail</h3>
+            <h3>E-mail</h3>
             <div class="inp">
               <input
                 required
@@ -134,14 +124,7 @@
                 <div class="error"></div>
               </div>
 
-              <button
-                type="button"
-                id="send-code"
-                data-en="Send"
-                data-ru="Отправить"
-              >
-                Send
-              </button>
+              <button type="button" id="send-code">Send</button>
             </div>
           </form>
 
@@ -150,12 +133,7 @@
             class="input-box_set-up-account"
             action="/pages/registrations/business-info.html"
           >
-            <h3
-              data-en="Set up an account password"
-              data-ru="Установите пароль для учетной записи"
-            >
-              Set up an account password
-            </h3>
+            <h3>Set up an account password</h3>
             <div class="inp">
               <input
                 required
@@ -192,13 +170,7 @@
               <div class="error"></div>
             </div>
 
-            <button
-              type="button"
-              data-en="Create account"
-              data-ru="Создать учетную запись"
-              class="btn-creat-acc"
-              id="create-acc"
-            >
+            <button type="button" class="btn-creat-acc" id="create-acc">
               Create account
             </button>
           </form>
@@ -216,18 +188,13 @@
                 alt="logo"
             /></a>
             <span>
-              <h3 data-en="Contact" data-ru="Контакт">Contact</h3>
+              <h3>Contact</h3>
               <a href="#">someemailhere@mail.com</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5
-            data-en="©2023 Best Offer Deal all rights reserved"
-            data-ru="©2023 Best Offer Deal все права защищены"
-          >
-            ©2023 <big>Best Offer Deal</big> all rights reserved
-          </h5>
+          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@
 // fonts
 $font-family: "Montserrat", sans-serif;
 $second-family: "Inter", sans-serif;
-$Cunia-family: "Cunia", sans-serif;
+// $Cunia-family: "Cunia", sans-serif;
 
 .main-create-acc {
   padding-inline: 20px;
@@ -149,6 +149,7 @@ $Cunia-family: "Cunia", sans-serif;
   font-size: 40px;
   text-align: center;
   font-weight: 700;
+  width: 80%;
   font-family: $font-family;
   border: none;
   color: white;
@@ -158,6 +159,7 @@ $Cunia-family: "Cunia", sans-serif;
 }
 
 .input-box {
+  width: 80%;
   display: flex;
   flex-direction: column;
   &_set-up-account {
@@ -184,10 +186,11 @@ $Cunia-family: "Cunia", sans-serif;
 
 .two-elements {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  gap: 10px;
+  justify-content: space-between;
   & > button {
-    width: 50%;
+    width: 40%;
     font-size: 24px;
     grid-column: 2;
     font-family: $font-family;
@@ -202,8 +205,6 @@ $Cunia-family: "Cunia", sans-serif;
     background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
   }
 }
-
-// inputs style of creating-account
 
 //LOGIN
 
@@ -223,7 +224,8 @@ $Cunia-family: "Cunia", sans-serif;
 }
 
 .login_buttons {
-  width: 90%;
+  width: 100%;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -236,10 +238,12 @@ $Cunia-family: "Cunia", sans-serif;
 
 .login_box {
   width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 50px;
   & > h2 {
+    text-align: start;
     font-size: 40px;
     font-weight: 700;
   }
@@ -311,6 +315,7 @@ $Cunia-family: "Cunia", sans-serif;
 
 .forgot-password-input {
   display: flex;
+  width: 80%;
   flex-direction: column;
   &_set-up-account {
     display: flex;
@@ -357,17 +362,19 @@ $Cunia-family: "Cunia", sans-serif;
   align-items: center;
   border-radius: 10px;
   font-size: 24px;
-  padding: 0 35px 0 15px;
+  background-color: white;
   border: 2px solid $darkblue;
+
   margin-bottom: 18px;
   &::placeholder {
     color: $lightblack;
     text-align: center;
+
     font-size: 24px;
   }
   & > input {
     width: 100%;
-    background: transparent;
+
     border: none;
   }
 }
@@ -394,6 +401,9 @@ $Cunia-family: "Cunia", sans-serif;
   .main-create-acc {
     grid-template-columns: 1fr 2fr;
     padding-right: 140px;
+  }
+  .input-box {
+    width: 100%;
   }
   .create-acc {
     width: 100%;

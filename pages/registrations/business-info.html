@@ -12,7 +12,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script src="/js/translate.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -42,14 +46,7 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <button
-            id="translateButton"
-            data-en="Rus"
-            data-ru="Eng"
-            class="header-elem__btn"
-          >
-            Rus
-          </button>
+          <button class="header-elem__btn">Rus</button>
         </section>
       </div>
     </header>
@@ -59,26 +56,17 @@
           <div class="steps-indic">
             <div class="step inactive">
               <h2>1</h2>
-              <span
-                data-en="Create account"
-                data-ru="
-              Регистрация"
-                >Create account</span
-              >
+              <span>Create account</span>
             </div>
             <div class="line"></div>
             <div class="steps">
               <h2>2</h2>
-              <span data-en="Business information" data-ru="Деловая информация"
-                >Business information</span
-              >
+              <span>Business information</span>
             </div>
             <div class="line"></div>
             <div class="step inactive">
               <h2>3</h2>
-              <span data-en="Application review" data-ru="На рассмотрении"
-                >Application review</span
-              >
+              <span>Application review</span>
             </div>
           </div>
         </section>
@@ -87,17 +75,10 @@
           class="create-acc"
         >
           <div class="create-acc_box">
-            <h2 data-en="Business Information" data-ru="Деловая информация">
-              Business Information
-            </h2>
+            <h2>Business Information</h2>
 
             <div>
-              <label
-                data-en="Company legal form"
-                data-ru="Юридическая форма компании"
-                for="choose"
-                >Company legal form</label
-              >
+              <label for="choose">Company legal form</label>
               <div class="inp">
                 <input required list="browsers" placeholder="choose" />
                 <datalist id="browsers">
@@ -118,12 +99,7 @@
             </div>
 
             <div>
-              <label
-                data-en="Registered Name"
-                data-ru="Зарегистрированное имя"
-                for="text"
-                >Registered Name</label
-              >
+              <label for="text">Registered Name</label>
               <div class="inp">
                 <input
                   required
@@ -142,12 +118,7 @@
             </div>
 
             <div class="other-label">
-              <label
-                for="text"
-                data-en="Company registered country"
-                data-ru=" Страна регистрации компании"
-                >Company registered country</label
-              >
+              <label for="text">Company registered country</label>
               <div class="inp">
                 <input required type="text" placeholder="Country" />
                 <span class="error-icon hidden">
@@ -161,12 +132,7 @@
             </div>
 
             <div class="other-label">
-              <label
-                for="text"
-                data-en="Company registered address"
-                data-ru="Юридический адрес компании"
-                >Company registered address</label
-              >
+              <label for="text">Company registered address</label>
               <div class="inp">
                 <input required type="text" placeholder="Specific address" />
                 <span class="error-icon hidden">
@@ -180,13 +146,7 @@
             </div>
 
             <div class="other-label">
-              <label
-                for="choose"
-                data-en="Field of activity (Can choose many)"
-                data-ru="
-              Сфера деятельности (Можно выбрать несколько)"
-                >Field of activity (Can choose many)</label
-              >
+              <label for="choose">Field of activity (Can choose many)</label>
               <div class="inp">
                 <input required list="browsers" placeholder="choose" />
                 <datalist id="browsers">
@@ -207,12 +167,7 @@
             </div>
 
             <div class="other-label">
-              <label
-                for="text"
-                data-en="VAT Registration Number"
-                data-ru="НДС регистрационный номер"
-                >VAT Registration Number</label
-              >
+              <label for="text">VAT Registration Number</label>
               <div class="inp">
                 <input required type="text" placeholder="0000 0000 0000 0000" />
                 <span class="error-icon hidden">
@@ -226,13 +181,7 @@
             </div>
 
             <div class="other-label">
-              <label
-                for="text"
-                data-en="Tax info (ИНН)"
-                data-ru="
-              Налоговая информация (ИНН)"
-                >Tax info (ИНН)</label
-              >
+              <label for="text">Tax info (ИНН)</label>
               <div class="inp">
                 <input required type="text" placeholder="0000 0000 0000 0000" />
                 <span class="error-icon hidden">
@@ -246,12 +195,7 @@
             </div>
 
             <div class="some-reg">
-              <p
-                data-en="Some Registration Certificate here"
-                data-ru="Некоторые свидетельства о регистрации здесь"
-              >
-                Some Registration Certificate here
-              </p>
+              <p>Some Registration Certificate here</p>
               <span class="file-pick">
                 <input
                   required
@@ -261,22 +205,13 @@
                 />
                 <div class="error"></div>
                 <label for="docpicker" id="file-label"> Add file </label>
-                <span
-                  class="label-span"
-                  data-en="File formats: PDF, JPG, JPEG, PNG, 10MB"
-                  data-ru="Форматы файлов: PDF, JPG, JPEG, PNG, 10 МБ."
+                <span class="label-span"
                   >File formats: PDF, JPG, JPEG, PNG, 10MB</span
                 >
               </span>
             </div>
 
-            <button
-              data-en="Submit"
-              data-ru="Представлять на рассмотрение"
-              type="button"
-              class="btn-creat-acc"
-              id="create-acc"
-            >
+            <button type="button" class="btn-creat-acc" id="create-acc">
               Submit
             </button>
           </div>
@@ -294,18 +229,13 @@
                 alt="logo"
             /></a>
             <span>
-              <h3 data-en="Contact" data-ru="Контакт">Contact</h3>
+              <h3>Contact</h3>
               <a href="#">someemailhere@mail.com</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5
-            data-en="©2023 Best Offer Deal all rights reserved"
-            data-ru="©2023 Best Offer Deal все права защищены"
-          >
-            ©2023 <big>Best Offer Deal</big> all rights reserved
-          </h5>
+          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
         </div>
       </div>
     </footer>
