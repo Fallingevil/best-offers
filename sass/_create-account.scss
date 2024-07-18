@@ -3,7 +3,7 @@
 // fonts
 $font-family: "Montserrat", sans-serif;
 $second-family: "Inter", sans-serif;
-// $Cunia-family: "Cunia", sans-serif;
+$Cunia-family: "Cunia", sans-serif;
 
 .main-create-acc {
   padding-inline: 20px;
@@ -84,11 +84,13 @@ $second-family: "Inter", sans-serif;
   }
   &_box {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 50px;
     & > h2 {
       font-family: $font-family;
       font-size: 40px;
+      width: 80%;
       font-weight: 700;
     }
   }
@@ -149,7 +151,6 @@ $second-family: "Inter", sans-serif;
   font-size: 40px;
   text-align: center;
   font-weight: 700;
-  width: 80%;
   font-family: $font-family;
   border: none;
   color: white;
@@ -165,6 +166,7 @@ $second-family: "Inter", sans-serif;
   &_set-up-account {
     display: flex;
     flex-direction: column;
+    width: 80%;
     gap: 10px;
     & > h3 {
       font-size: 32px;
@@ -188,9 +190,10 @@ $second-family: "Inter", sans-serif;
   display: flex;
   width: 100%;
   flex-direction: row;
+  gap: 20px;
   justify-content: space-between;
   & > button {
-    width: 40%;
+    width: 50%;
     font-size: 24px;
     grid-column: 2;
     font-family: $font-family;
@@ -278,6 +281,20 @@ $second-family: "Inter", sans-serif;
   }
 }
 
+.btn-sign-in {
+  padding: 10px 15px;
+  font-size: 40px;
+  width: 80%;
+  text-align: center;
+  font-weight: 700;
+  font-family: $font-family;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+}
+
 //forgot password
 
 .hidden {
@@ -292,6 +309,7 @@ $second-family: "Inter", sans-serif;
 .reset {
   display: flex;
   flex-direction: row;
+  padding-left: 45px;
   gap: 20px;
   align-items: center;
   padding-bottom: 25px;
@@ -303,9 +321,11 @@ $second-family: "Inter", sans-serif;
 
 .forgot-elements {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 25px;
   & > p {
+    width: 80%;
     font-size: 24px;
     font-weight: 400;
     color: #555555;
@@ -315,7 +335,7 @@ $second-family: "Inter", sans-serif;
 
 .forgot-password-input {
   display: flex;
-  width: 80%;
+
   flex-direction: column;
   &_set-up-account {
     display: flex;
@@ -334,8 +354,22 @@ $second-family: "Inter", sans-serif;
 }
 #send-code {
   height: 46px;
+  padding: 5px 66px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: $font-family;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
 }
 
+.f-two-elem {
+  display: flex;
+  gap: 20px;
+}
 //errors
 
 .error {
@@ -361,6 +395,7 @@ $second-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   border-radius: 10px;
+  width: 100%;
   font-size: 24px;
   background-color: white;
   border: 2px solid $darkblue;
@@ -397,13 +432,28 @@ $second-family: "Inter", sans-serif;
   }
 }
 
+.f-btn-creat-acc {
+  padding: 10px 15px;
+  font-size: 40px;
+  text-align: center;
+
+  font-weight: 700;
+
+  font-family: $font-family;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+}
+
 @media (max-width: 1440px) {
   .main-create-acc {
     grid-template-columns: 1fr 2fr;
     padding-right: 140px;
   }
   .input-box {
-    width: 100%;
+    width: 80%;
   }
   .create-acc {
     width: 100%;

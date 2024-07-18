@@ -399,12 +399,14 @@ footer {
 }
 .create-acc_box {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 50px;
 }
 .create-acc_box > h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  width: 80%;
   font-weight: 700;
 }
 
@@ -462,7 +464,6 @@ footer {
   font-size: 40px;
   text-align: center;
   font-weight: 700;
-  width: 80%;
   font-family: "Montserrat", sans-serif;
   border: none;
   color: white;
@@ -479,6 +480,7 @@ footer {
 .input-box_set-up-account {
   display: flex;
   flex-direction: column;
+  width: 80%;
   gap: 10px;
 }
 .input-box_set-up-account > h3 {
@@ -501,10 +503,11 @@ footer {
   display: flex;
   width: 100%;
   flex-direction: row;
+  gap: 20px;
   justify-content: space-between;
 }
 .two-elements > button {
-  width: 40%;
+  width: 50%;
   font-size: 24px;
   grid-column: 2;
   font-family: "Montserrat", sans-serif;
@@ -589,6 +592,20 @@ footer {
   width: 100%;
 }
 
+.btn-sign-in {
+  padding: 10px 15px;
+  font-size: 40px;
+  width: 80%;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+}
+
 .hidden {
   display: none;
 }
@@ -601,6 +618,7 @@ footer {
 .reset {
   display: flex;
   flex-direction: row;
+  padding-left: 45px;
   gap: 20px;
   align-items: center;
   padding-bottom: 25px;
@@ -612,10 +630,12 @@ footer {
 
 .forgot-elements {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 25px;
 }
 .forgot-elements > p {
+  width: 80%;
   font-size: 24px;
   font-weight: 400;
   color: #555555;
@@ -624,7 +644,6 @@ footer {
 
 .forgot-password-input {
   display: flex;
-  width: 80%;
   flex-direction: column;
 }
 .forgot-password-input_set-up-account {
@@ -644,6 +663,21 @@ footer {
 
 #send-code {
   height: 46px;
+  padding: 5px 66px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+}
+
+.f-two-elem {
+  display: flex;
+  gap: 20px;
 }
 
 .error {
@@ -669,6 +703,7 @@ footer {
   display: flex;
   align-items: center;
   border-radius: 10px;
+  width: 100%;
   font-size: 24px;
   background-color: white;
   border: 2px solid #00317d;
@@ -702,13 +737,26 @@ footer {
   border: none;
 }
 
+.f-btn-creat-acc {
+  padding: 10px 15px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+}
+
 @media (max-width: 1440px) {
   .main-create-acc {
     grid-template-columns: 1fr 2fr;
     padding-right: 140px;
   }
   .input-box {
-    width: 100%;
+    width: 80%;
   }
   .create-acc {
     width: 100%;
