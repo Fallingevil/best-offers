@@ -1,0 +1,68 @@
+@import "./header";
+
+.edits-container {
+  max-width: 1420px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.change-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 250px;
+}
+
+.text-change-email {
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+.text-new-email {
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: $font-family;
+  padding-bottom: 30px;
+}
+
+#btn-change-email {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  font-family: $font-family;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 15px 0;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1720px) {
+  .edits-container {
+    max-width: 1300px;
+  }
+  .text-change-email {
+    font-size: 32px;
+  }
+
+  .text-new-email {
+    font-size: 24px;
+  }
+
+  .change-email {
+    margin-bottom: 100px;
+  }
+  #btn-change-email {
+    font-size: 24px;
+  }
+}

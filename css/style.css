@@ -42,18 +42,22 @@ header {
 .header-elem__btn {
   position: relative;
   display: flex;
-  gap: 2px;
+  gap: 10px;
+  flex-direction: row;
   align-items: center;
-  padding: 20px 22px;
+  padding: 0px 22px;
   border-radius: 60px;
   border: 2px solid #00317d;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: #00317d;
   background: transparent;
   overflow: hidden;
   transition: background-color 0.3s, color 0.3s;
+}
+.header-elem__btn > span {
+  font-size: 24px;
 }
 .header-elem__btn:hover {
   color: white;
@@ -108,8 +112,57 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
-.fa-solid {
-  margin-right: 10px;
+.two-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.translate-btn {
+  padding: 15px 16px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.translate-btn:hover {
+  color: white;
+}
+
+.translate-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+
+.translate-btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+
+.bx {
+  padding: 15px 0px;
+  font-size: 32px;
 }
 
 footer {
@@ -186,9 +239,23 @@ footer {
     transform: translateY(0px);
   }
 }
+@media (max-width: 1370px) {
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .header-elem__btn > span {
+    font-size: 19px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .header-elem {
     height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
   }
   .header-elem__logo > img {
     width: 95px;
@@ -196,7 +263,7 @@ footer {
   }
   .header-elem__btn {
     font-size: 22px;
-    padding: 18px 20px;
+    padding: 0px 20px;
   }
   .company {
     font-size: 22px;
@@ -461,7 +528,7 @@ footer {
 
 .btn-creat-acc {
   padding: 10px 15px;
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -594,7 +661,7 @@ footer {
 
 .btn-sign-in {
   padding: 10px 15px;
-  font-size: 40px;
+  font-size: 32px;
   width: 80%;
   text-align: center;
   font-weight: 700;
@@ -690,12 +757,12 @@ footer {
 }
 
 .error-icon {
-  margin-left: -6px;
+  margin-left: 6px;
   color: red;
 }
 
 .success-icon {
-  margin-left: -6px;
+  margin-left: 6px;
   color: rgb(8, 148, 8);
 }
 
@@ -706,7 +773,6 @@ footer {
   width: 100%;
   font-size: 24px;
   background-color: white;
-  border: 2px solid #00317d;
   margin-bottom: 18px;
 }
 .inp::placeholder {
@@ -716,30 +782,23 @@ footer {
 }
 .inp > input {
   width: 100%;
-  border: none;
+  border: 2px solid rgb(155, 155, 155);
 }
-
-.email-verification {
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  font-size: 24px;
-  padding: 0 35px 0 15px;
+.inp > input:focus {
   border: 2px solid #00317d;
 }
-.email-verification::placeholder {
-  color: #555555;
-  text-align: center;
-  font-size: 24px;
-}
+
 .email-verification > input {
   width: 100%;
-  border: none;
+  border: 2px solid rgb(155, 155, 155);
+}
+.email-verification > input:focus {
+  border: 2px solid #00317d;
 }
 
 .f-btn-creat-acc {
   padding: 10px 15px;
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -893,18 +952,22 @@ header {
 .header-elem__btn {
   position: relative;
   display: flex;
-  gap: 2px;
+  gap: 10px;
+  flex-direction: row;
   align-items: center;
-  padding: 20px 22px;
+  padding: 0px 22px;
   border-radius: 60px;
   border: 2px solid #00317d;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: #00317d;
   background: transparent;
   overflow: hidden;
   transition: background-color 0.3s, color 0.3s;
+}
+.header-elem__btn > span {
+  font-size: 24px;
 }
 .header-elem__btn:hover {
   color: white;
@@ -959,8 +1022,57 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
-.fa-solid {
-  margin-right: 10px;
+.two-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.translate-btn {
+  padding: 15px 16px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.translate-btn:hover {
+  color: white;
+}
+
+.translate-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+
+.translate-btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+
+.bx {
+  padding: 15px 0px;
+  font-size: 32px;
 }
 
 footer {
@@ -1037,9 +1149,23 @@ footer {
     transform: translateY(0px);
   }
 }
+@media (max-width: 1370px) {
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .header-elem__btn > span {
+    font-size: 19px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .header-elem {
     height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
   }
   .header-elem__logo > img {
     width: 95px;
@@ -1047,7 +1173,7 @@ footer {
   }
   .header-elem__btn {
     font-size: 22px;
-    padding: 18px 20px;
+    padding: 0px 20px;
   }
   .company {
     font-size: 22px;
@@ -1179,6 +1305,25 @@ footer {
   padding-bottom: 50px;
 }
 
+.buss_box {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+.buss_box > h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.buss_two-elem {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.buss_two-elem > div {
+  width: 100%;
+}
+
 .left-side2 {
   justify-self: center;
   padding-top: 50px;
@@ -1199,7 +1344,6 @@ footer {
 .other-label {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .some-reg {
@@ -1305,6 +1449,23 @@ input:focus {
   font-weight: 400;
 }
 
+@media (max-width: 1720px) {
+  .buss_box > h2 {
+    font-size: 32px;
+  }
+  .buss_two-elem > div > label {
+    font-size: 24px;
+  }
+  .other-label > label {
+    font-size: 24px;
+  }
+  .some-reg > p {
+    font-size: 24px;
+  }
+  #file-label {
+    font-size: 17px;
+  }
+}
 input {
   font-family: "Montserrat", sans-serif;
   background-color: white;
@@ -1349,18 +1510,22 @@ header {
 .header-elem__btn {
   position: relative;
   display: flex;
-  gap: 2px;
+  gap: 10px;
+  flex-direction: row;
   align-items: center;
-  padding: 20px 22px;
+  padding: 0px 22px;
   border-radius: 60px;
   border: 2px solid #00317d;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: #00317d;
   background: transparent;
   overflow: hidden;
   transition: background-color 0.3s, color 0.3s;
+}
+.header-elem__btn > span {
+  font-size: 24px;
 }
 .header-elem__btn:hover {
   color: white;
@@ -1415,8 +1580,57 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
-.fa-solid {
-  margin-right: 10px;
+.two-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.translate-btn {
+  padding: 15px 16px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.translate-btn:hover {
+  color: white;
+}
+
+.translate-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+
+.translate-btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+
+.bx {
+  padding: 15px 0px;
+  font-size: 32px;
 }
 
 footer {
@@ -1493,9 +1707,23 @@ footer {
     transform: translateY(0px);
   }
 }
+@media (max-width: 1370px) {
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .header-elem__btn > span {
+    font-size: 19px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .header-elem {
     height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
   }
   .header-elem__logo > img {
     width: 95px;
@@ -1503,7 +1731,7 @@ footer {
   }
   .header-elem__btn {
     font-size: 22px;
-    padding: 18px 20px;
+    padding: 0px 20px;
   }
   .company {
     font-size: 22px;
@@ -1954,6 +2182,901 @@ footer {
     padding: 5px 0px;
   }
 }
+input {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #00317d;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+header {
+  box-shadow: 0 5px 20px #000;
+  transform: translateY(-150px);
+  animation: headerShow 0.6s linear 1 forwards;
+}
+
+.header-elem {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-elem__logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-elem__logo > img {
+  width: 105px;
+  height: 110px;
+}
+.header-elem__btn {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 22px;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+.header-elem__btn > span {
+  font-size: 24px;
+}
+.header-elem__btn:hover {
+  color: white;
+}
+.header-elem__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+.header-elem__btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+.header-elem__btn:hover .bx {
+  transition: color 0.3s;
+}
+
+.company {
+  font-size: 24px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.phone-box__icon {
+  height: 48px;
+  width: 48px;
+}
+.phone-box__numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.phone-box__numbers > a {
+  font-size: 24px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.two-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.translate-btn {
+  padding: 15px 16px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.translate-btn:hover {
+  color: white;
+}
+
+.translate-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+
+.translate-btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+
+.bx {
+  padding: 15px 0px;
+  font-size: 32px;
+}
+
+footer {
+  position: absolute;
+  overflow: hidden;
+  margin-top: -300px;
+  display: flex;
+  align-items: end;
+  z-index: -1;
+  justify-content: center;
+  height: 869px;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  top: -100px;
+}
+
+.footer-elements {
+  padding-top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.footer-elements > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 1;
+}
+.footer-elements > div > span {
+  justify-content: center;
+  display: flex;
+  width: 413px;
+  padding-left: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-elements > div > span > h3 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+.footer-elements > div > span > a {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+}
+.footer-elements > div > a {
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  gap: 23px;
+  padding-inline: 43px;
+  border-right: 2px solid #ffffff;
+}
+.footer-elements > h5 {
+  padding-top: 30px;
+  text-align: center;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+@keyframes headerShow {
+  to {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 1370px) {
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .header-elem__btn > span {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .header-elem__logo > img {
+    width: 95px;
+    height: 100px;
+  }
+  .header-elem__btn {
+    font-size: 22px;
+    padding: 0px 20px;
+  }
+  .company {
+    font-size: 22px;
+  }
+  .phone-box__icon {
+    height: 40px;
+    width: 40px;
+  }
+  .phone-box__numbers > a {
+    font-size: 22px;
+  }
+  footer {
+    height: 750px;
+  }
+  .footer-elements > div > span > h3 {
+    font-size: 36px;
+  }
+  .footer-elements > div > span > a {
+    font-size: 22px;
+  }
+  .footer-elements > h5 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-elem {
+    height: 110px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-elem__logo {
+    gap: 15px;
+  }
+  .header-elem__logo > img {
+    width: 85px;
+    height: 90px;
+  }
+  .header-elem__btn {
+    font-size: 20px;
+    padding: 16px 18px;
+  }
+  .company {
+    font-size: 20px;
+  }
+  .phone-box__icon {
+    height: 35px;
+    width: 35px;
+  }
+  .phone-box__numbers > a {
+    font-size: 20px;
+  }
+  footer {
+    height: 650px;
+  }
+  .footer-elements > div > span > h3 {
+    font-size: 32px;
+  }
+  .footer-elements > div > span > a {
+    font-size: 20px;
+  }
+  .footer-elements > h5 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-elem {
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .header-elem__logo {
+    gap: 10px;
+  }
+  .header-elem__logo > img {
+    width: 75px;
+    height: 80px;
+  }
+  .header-elem__btn {
+    font-size: 18px;
+    padding: 14px 16px;
+  }
+  .company {
+    font-size: 18px;
+  }
+  .phone-box {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  .phone-box__numbers {
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    height: 550px;
+  }
+  .footer-elements {
+    padding-top: 400px;
+  }
+  .footer-elements > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  .footer-elements > div > span {
+    width: auto;
+    padding-left: 0;
+  }
+  .footer-elements > div > a {
+    border-right: none;
+  }
+  .footer-elements > div > span > h3 {
+    font-size: 28px;
+  }
+  .footer-elements > div > span > a {
+    font-size: 18px;
+  }
+  .footer-elements > h5 {
+    font-size: 18px;
+  }
+}
+.edits-container {
+  max-width: 1420px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.change-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 250px;
+}
+
+.text-change-email {
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+.text-new-email {
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 30px;
+}
+
+#btn-change-email {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 15px 0;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1720px) {
+  .edits-container {
+    max-width: 1300px;
+  }
+  .text-change-email {
+    font-size: 32px;
+  }
+  .text-new-email {
+    font-size: 24px;
+  }
+  .change-email {
+    margin-bottom: 100px;
+  }
+  #btn-change-email {
+    font-size: 24px;
+  }
+}
+input {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #00317d;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+header {
+  box-shadow: 0 5px 20px #000;
+  transform: translateY(-150px);
+  animation: headerShow 0.6s linear 1 forwards;
+}
+
+.header-elem {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-elem__logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-elem__logo > img {
+  width: 105px;
+  height: 110px;
+}
+.header-elem__btn {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 22px;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+.header-elem__btn > span {
+  font-size: 24px;
+}
+.header-elem__btn:hover {
+  color: white;
+}
+.header-elem__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+.header-elem__btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+.header-elem__btn:hover .bx {
+  transition: color 0.3s;
+}
+
+.company {
+  font-size: 24px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.phone-box__icon {
+  height: 48px;
+  width: 48px;
+}
+.phone-box__numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.phone-box__numbers > a {
+  font-size: 24px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.two-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.translate-btn {
+  padding: 15px 16px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.translate-btn:hover {
+  color: white;
+}
+
+.translate-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+
+.translate-btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+
+.bx {
+  padding: 15px 0px;
+  font-size: 32px;
+}
+
+footer {
+  position: absolute;
+  overflow: hidden;
+  margin-top: -300px;
+  display: flex;
+  align-items: end;
+  z-index: -1;
+  justify-content: center;
+  height: 869px;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  top: -100px;
+}
+
+.footer-elements {
+  padding-top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.footer-elements > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 1;
+}
+.footer-elements > div > span {
+  justify-content: center;
+  display: flex;
+  width: 413px;
+  padding-left: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-elements > div > span > h3 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+.footer-elements > div > span > a {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+}
+.footer-elements > div > a {
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  gap: 23px;
+  padding-inline: 43px;
+  border-right: 2px solid #ffffff;
+}
+.footer-elements > h5 {
+  padding-top: 30px;
+  text-align: center;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+@keyframes headerShow {
+  to {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 1370px) {
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .header-elem__btn > span {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-elem {
+    height: 130px;
+  }
+  .header-elem__btn {
+    font-size: 19px;
+  }
+  .header-elem__logo > img {
+    width: 95px;
+    height: 100px;
+  }
+  .header-elem__btn {
+    font-size: 22px;
+    padding: 0px 20px;
+  }
+  .company {
+    font-size: 22px;
+  }
+  .phone-box__icon {
+    height: 40px;
+    width: 40px;
+  }
+  .phone-box__numbers > a {
+    font-size: 22px;
+  }
+  footer {
+    height: 750px;
+  }
+  .footer-elements > div > span > h3 {
+    font-size: 36px;
+  }
+  .footer-elements > div > span > a {
+    font-size: 22px;
+  }
+  .footer-elements > h5 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-elem {
+    height: 110px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-elem__logo {
+    gap: 15px;
+  }
+  .header-elem__logo > img {
+    width: 85px;
+    height: 90px;
+  }
+  .header-elem__btn {
+    font-size: 20px;
+    padding: 16px 18px;
+  }
+  .company {
+    font-size: 20px;
+  }
+  .phone-box__icon {
+    height: 35px;
+    width: 35px;
+  }
+  .phone-box__numbers > a {
+    font-size: 20px;
+  }
+  footer {
+    height: 650px;
+  }
+  .footer-elements > div > span > h3 {
+    font-size: 32px;
+  }
+  .footer-elements > div > span > a {
+    font-size: 20px;
+  }
+  .footer-elements > h5 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-elem {
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .header-elem__logo {
+    gap: 10px;
+  }
+  .header-elem__logo > img {
+    width: 75px;
+    height: 80px;
+  }
+  .header-elem__btn {
+    font-size: 18px;
+    padding: 14px 16px;
+  }
+  .company {
+    font-size: 18px;
+  }
+  .phone-box {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  .phone-box__numbers {
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    height: 550px;
+  }
+  .footer-elements {
+    padding-top: 400px;
+  }
+  .footer-elements > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  .footer-elements > div > span {
+    width: auto;
+    padding-left: 0;
+  }
+  .footer-elements > div > a {
+    border-right: none;
+  }
+  .footer-elements > div > span > h3 {
+    font-size: 28px;
+  }
+  .footer-elements > div > span > a {
+    font-size: 18px;
+  }
+  .footer-elements > h5 {
+    font-size: 18px;
+  }
+}
+.edit-pssword-ch {
+  margin-top: 150px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 250px;
+}
+
+.text-edit-password {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+.text-about-pass {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.edit-pass-h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.text-create-new-pass {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media (max-width: 1720px) {
+  .edit-pssword-ch {
+    margin-bottom: 50px;
+  }
+  .text-edit-password {
+    font-size: 32px;
+  }
+  .text-about-pass {
+    font-size: 17px;
+  }
+  .edit-pass-h3 {
+    font-size: 24px;
+  }
+  .text-create-new-pass {
+    font-size: 24px;
+  }
+}
 @font-face {
   font-family: "Cunia", sans-serif;
   src: url("fonts/Cunia.otf") format("opentype");
@@ -2074,11 +3197,11 @@ body {
 }
 .what-v-do__btn {
   align-items: center;
-  padding: 20px 22px;
+  padding: 10px 22px;
   border-radius: 60px;
   gap: 10px;
   border: 2px solid #00317d;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -2208,6 +3331,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 66px;
+}
+.fast-way__text > span {
+  display: flex;
 }
 .fast-way__text > h2 {
   color: #000;
@@ -2423,6 +3549,53 @@ body {
   font-size: 16px;
 }
 
+.choose {
+  display: flex;
+  gap: 50px;
+}
+
+.choose_btn {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  padding: 20px 22px;
+  border-radius: 60px;
+  border: 2px solid #00317d;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #00317d;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+.choose_btn_btn:hover {
+  color: white;
+}
+.choose_btn_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: unset;
+  right: 0;
+  border-radius: 60px;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+  transition: 0.4s all ease-in-out 0s;
+}
+.choose_btn_btn:hover::before {
+  left: 0;
+  right: unset;
+  width: 100%;
+}
+.choose_btn_btn:hover .bx {
+  transition: color 0.3s;
+}
+
 .err-page {
   display: flex;
   flex-direction: column;
@@ -2572,9 +3745,6 @@ body {
   .header-elem__logo > img {
     width: 84px;
     height: 88px;
-  }
-  .header-elem__btn {
-    font-size: 19px;
   }
   .phone-box__icon {
     height: 38.4px;

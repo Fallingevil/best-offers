@@ -7,6 +7,25 @@
   padding-bottom: 50px;
 }
 
+.buss_box {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  & > h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+.buss_two-elem {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  & > div {
+    width: 100%;
+  }
+}
+
 .left-side2 {
   justify-self: center;
   padding-top: 50px;
@@ -28,7 +47,6 @@
 .other-label {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 .some-reg {
   position: relative;
@@ -134,4 +152,20 @@ input:focus {
   }
 }
 
-// rest password
+@media (max-width: 1720px) {
+  .buss_box > h2 {
+    font-size: 32px;
+  }
+  .buss_two-elem > div > label {
+    font-size: 24px;
+  }
+  .other-label > label {
+    font-size: 24px;
+  }
+  .some-reg > p {
+    font-size: 24px;
+  }
+  #file-label {
+    font-size: 17px;
+  }
+}

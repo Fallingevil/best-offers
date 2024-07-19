@@ -2,6 +2,8 @@
 @import "./business-info";
 @import "./seller-edit";
 @import "./adding-product";
+@import "./email";
+@import "./edit-password";
 
 $darkblue: #00317d;
 $skyblue: #0384d8;
@@ -134,11 +136,11 @@ body {
 
   &__btn {
     align-items: center;
-    padding: 20px 22px;
+    padding: 10px 22px;
     border-radius: 60px;
     gap: 10px;
     border: 2px solid $darkblue;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 400;
     font-family: $font-family;
     color: $white;
@@ -278,6 +280,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 66px;
+    & > span {
+      display: flex;
+    }
     & > h2 {
       color: $black;
       font-size: 54px;
@@ -498,6 +503,55 @@ body {
   font-size: 16px;
 }
 
+.choose {
+  display: flex;
+  gap: 50px;
+}
+
+.choose_btn {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  padding: 20px 22px;
+  border-radius: 60px;
+  border: 2px solid $darkblue;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: $font-family;
+  color: $darkblue;
+  background: transparent;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+
+  &_btn:hover {
+    color: white;
+  }
+  &_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: unset;
+    right: 0;
+    border-radius: 60px;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(225deg, #17bff0 0%, #00317d 100%);
+    transition: 0.4s all ease-in-out 0s;
+  }
+
+  &_btn:hover::before {
+    left: 0;
+    right: unset;
+    width: 100%;
+  }
+  &_btn:hover .bx {
+    transition: color 0.3s;
+  }
+}
+
 //404-page
 .err-page {
   display: flex;
@@ -674,9 +728,6 @@ body {
     &__logo > img {
       width: 84px;
       height: 88px;
-    }
-    &__btn {
-      font-size: 19px;
     }
   }
 
