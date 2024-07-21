@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Offers</title>
+    <link rel="icon" href="images/logo-web.svg" type="web-logo" />
+    <link rel="apple-touch-icon" href="images/logo-web.svg" />
+    <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LOGIC OF THIS PAGE -->
+    <script defer src="/js/adding-products.js"></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="custom-container">
+        <section class="custom-header-elem">
+          <a href="/index.html" class="custom-header-elem__logo">
+            <img src="/images/logo-web.svg" alt="logo" />
+            <img src="/images/logo-text.svg" alt="text" />
+          </a>
+
+          <div class="expand-elements">
+            <div
+              class="custom-header-elem__search"
+              id="custom-header-elem__search"
+            >
+              <input
+                type="text"
+                placeholder="Search..."
+                id="custom-search-input"
+              />
+              <i class="bx bx-search"></i>
+            </div>
+
+            <div class="custom-phone-box" id="custom-phone-box">
+              <a href="tel:+998909999999">
+                <img
+                  class="custom-phone-box__icon"
+                  src="/images/icons/phone.svg"
+                  alt="icon"
+                />
+              </a>
+              <span class="custom-phone-box__numbers">
+                <a href="tel:+998909999999">+998 (90) 999-99-99</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="custom-two-buttons">
+            <a href="/cart.html" class="custom-header-elem__btn">
+              <i class="bx bx-cart"></i><span>Basket</span>
+            </a>
+            <a
+              href="/pages/registrations/create-account.html"
+              class="custom-header-elem__btn"
+            >
+              <i class="bx bx-user-circle"></i><span>Profile</span>
+            </a>
+            <button class="custom-translate-btn">Rus</button>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="layout">
+      <div class="custom-filter">
+        <h2>Filter</h2>
+        <span>
+          <h4>Minimum Amount</h4>
+          <input type="number" placeholder="Enter amount pcs" />
+        </span>
+        <span>
+          <h4>Price</h4>
+          <div class="custom-filter-price">
+            <div class="custom-input-wrapper">
+              <input type="number" placeholder="Min" />
+              <span class="custom-input-suffix">$</span>
+            </div>
+            <div class="custom-filter-line"></div>
+            <div class="custom-input-wrapper">
+              <input type="number" placeholder="Max" />
+              <span class="custom-input-suffix">$</span>
+            </div>
+          </div>
+        </span>
+        <span>
+          <h4>Delivery deadline</h4>
+          <div class="custom-filter-deadline">
+            <div class="custom-input-wrapper">
+              <input type="number" placeholder="Days" />
+              <span class="custom-input-suffix">day</span>
+            </div>
+            <div class="custom-filter-line"></div>
+            <div class="custom-input-wrapper">
+              <input type="number" placeholder="Months" />
+              <span class="custom-input-suffix">month</span>
+            </div>
+          </div>
+        </span>
+        <div class="custom-filter-buttons">
+          <button class="custom-btn">Clear All</button>
+          <button class="custom-btn">Save</button>
+        </div>
+      </div>
+      <div class="top-sales-box">
+        <h1>Top sales</h1>
+        <section class="top-sales-cards">
+          <div class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="bx bx-cart"></i>Add to basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="bx bx-cart"></i>Add to basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="bx bx-cart"></i>Add to basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="bx bx-cart"></i>Add to basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <img class="footer" src="/images/back-images/union.svg" alt="logo" />
+      <div class="container">
+        <div class="footer-elements">
+          <div>
+            <a href="#"
+              ><img src="/images/back-images/White-logo.svg" alt="logo" /><img
+                src="/images/back-images/white-text-logo.svg"
+                alt="logo"
+            /></a>
+            <span>
+              <h3>Contact</h3>
+              <a href="#">someemailhere@mail.com</a>
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+            </span>
+          </div>
+          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("custom-search-input")
+        .addEventListener("focus", function () {
+          document
+            .getElementById("custom-phone-box")
+            .classList.add("custom-hidden");
+          document
+            .getElementById("custom-header-elem__search")
+            .classList.add("custom-expanded");
+        });
+
+      document
+        .getElementById("custom-search-input")
+        .addEventListener("blur", function () {
+          if (this.value === "") {
+            document
+              .getElementById("custom-phone-box")
+              .classList.remove("custom-hidden");
+            document
+              .getElementById("custom-header-elem__search")
+              .classList.remove("custom-expanded");
+          }
+        });
+    </script>
+  </body>
+</html>

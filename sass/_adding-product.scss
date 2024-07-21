@@ -10,7 +10,7 @@ $second-family: "Inter", sans-serif;
 .custom-main {
   display: grid;
   grid-template-columns: 60% 5% 40%;
-  margin: 168px 0 150px 0;
+  margin: 168px 0 250px 0;
 }
 
 //inputs labels etc.
@@ -32,10 +32,10 @@ $second-family: "Inter", sans-serif;
 
 .adding-input {
   width: 100%;
+  border: 2px solid rgb(180, 180, 180);
 }
 .adding-input:focus {
   border: 2px solid #00317d;
-  box-shadow: 0 0 5px black;
 }
 
 .photo-pick {
@@ -69,6 +69,10 @@ $second-family: "Inter", sans-serif;
   }
 }
 
+.inactive {
+  color: rgb(180, 180, 180);
+}
+
 #checkbox {
   cursor: pointer;
   height: 20px;
@@ -93,30 +97,35 @@ $second-family: "Inter", sans-serif;
   cursor: pointer;
 }
 
+@media (max-width: 1720px) {
+  .custom-main {
+    margin: 140px 0 150px 0;
+  }
+  .adding-label {
+    font-size: 24px;
+  }
+  .product-category > h3 {
+    font-size: 24px;
+  }
+  #category {
+    font-size: 19px;
+  }
+  #save {
+    font-size: 24px;
+  }
+  #photo-label {
+    font-size: 19px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .custom-main {
     grid-template-columns: 50% 5% 40%;
     margin: 140px 0 0px 0;
   }
 
-  .product-category > h3 {
-    font-size: 28px;
-  }
-
-  #photo-label {
-    font-size: 19px;
-  }
   .label-span {
     font-size: 16px;
-  }
-
-  .categories > span {
-    font-size: 22px;
-  }
-
-  #save {
-    font-size: 28px;
-    padding: 12px 0px;
   }
 }
 

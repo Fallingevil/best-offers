@@ -4,6 +4,7 @@
 @import "./adding-product";
 @import "./email";
 @import "./edit-password";
+@import "./adding-products_edit";
 
 $darkblue: #00317d;
 $skyblue: #0384d8;
@@ -41,6 +42,7 @@ h2 {
 
 body {
   width: 100%;
+  // overflow: hidden;
 }
 
 .back-img {

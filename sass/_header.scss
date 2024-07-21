@@ -31,8 +31,9 @@ h2 {
 }
 
 header {
-  box-shadow: 0 5px 20px $black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.226);
   transform: translateY(-150px);
+
   animation: headerShow 0.6s linear 1 forwards;
 }
 
@@ -311,10 +312,6 @@ footer {
   .footer-elements > div > span > a {
     font-size: 22px;
   }
-
-  .footer-elements > h5 {
-    font-size: 22px;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -360,10 +357,6 @@ footer {
   }
 
   .footer-elements > div > span > a {
-    font-size: 20px;
-  }
-
-  .footer-elements > h5 {
     font-size: 20px;
   }
 }
