@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Offers</title>
-    <link rel="icon" href="images/logo-web.svg" type="web-logo" />
+    <link rel="icon" href="/images/logo-web.svg" type="web-logo" />
     <link rel="apple-touch-icon" href="images/logo-web.svg" />
     <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -73,8 +73,13 @@
     </header>
 
     <main class="layout">
-      <div class="custom-filter">
-        <h2>Filter</h2>
+      <div class="custom-filter hidden" id="custom-filter">
+        <span class="filter-h2">
+          <h2>Filter</h2>
+          <button id="close-icon">
+            <i class="bx bx-x"></i>
+          </button>
+        </span>
         <span>
           <h4>Minimum Amount</h4>
           <input type="number" placeholder="Enter amount pcs" />
@@ -97,12 +102,12 @@
           <h4>Delivery deadline</h4>
           <div class="custom-filter-deadline">
             <div class="custom-input-wrapper">
-              <input type="number" placeholder="Days" />
+              <input type="number" />
               <span class="custom-input-suffix">day</span>
             </div>
             <div class="custom-filter-line"></div>
             <div class="custom-input-wrapper">
-              <input type="number" placeholder="Months" />
+              <input type="number" />
               <span class="custom-input-suffix">month</span>
             </div>
           </div>
@@ -115,7 +120,7 @@
       <div class="top-sales-box">
         <h1>Top sales</h1>
         <section class="top-sales-cards">
-          <div class="top-prod-card">
+          <a href="#" class="top-prod-card">
             <div>
               <img src="/images/products-images/paper.png" alt="product" />
             </div>
@@ -144,7 +149,7 @@
                 </span>
               </div>
             </div>
-          </div>
+          </a>
           <div class="top-prod-card">
             <div>
               <img src="/images/products-images/paper.png" alt="product" />
@@ -260,30 +265,43 @@
         </div>
       </div>
     </footer>
-    <script>
-      document
-        .getElementById("custom-search-input")
-        .addEventListener("focus", function () {
-          document
-            .getElementById("custom-phone-box")
-            .classList.add("custom-hidden");
-          document
-            .getElementById("custom-header-elem__search")
-            .classList.add("custom-expanded");
-        });
 
-      document
-        .getElementById("custom-search-input")
-        .addEventListener("blur", function () {
-          if (this.value === "") {
-            document
-              .getElementById("custom-phone-box")
-              .classList.remove("custom-hidden");
-            document
-              .getElementById("custom-header-elem__search")
-              .classList.remove("custom-expanded");
-          }
-        });
+    <script>
+      const searchInput = document.getElementById("custom-search-input");
+      const filter = document.getElementById("custom-filter");
+
+      const closeIcon = document.getElementById("close-icon");
+
+      // Show filter and hide circle button when search input is focused
+      searchInput.addEventListener("focus", () => {
+        filter.classList.remove("hidden");
+      });
+
+      // Hide filter and show circle button when X icon is clicked
+      closeIcon.addEventListener("click", () => {
+        filter.classList.add("hidden");
+      });
+
+      // Show filter and hide circle button when the circle button is clicked
+      circleButton.addEventListener("click", () => {
+        filter.classList.remove("hidden");
+      });
+
+      // Hide filter when clicking outside the filter and search input
+      document.addEventListener("click", (event) => {
+        if (
+          !event.target.closest(".custom-search-input") &&
+          !event.target.closest(".custom-filter")
+        ) {
+          filter.classList.add("hidden");
+          circleButton.style.display = "block";
+        }
+      });
+
+      // Prevent filter from hiding when clicking inside it
+      filter.addEventListener("click", (event) => {
+        event.stopPropagation();
+      });
     </script>
   </body>
 </html>
