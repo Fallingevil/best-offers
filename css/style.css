@@ -3555,7 +3555,7 @@ input[type=checkbox]:checked::after {
 .top-sales-box {
   margin-top: 100px;
   display: flex;
-  grid-column: 2/4;
+  grid-column: 2/5;
   flex-direction: column;
   width: 100%;
   gap: 20px;
@@ -3661,6 +3661,7 @@ input[type=checkbox]:checked::after {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
+  grid-column: 2/5;
   width: 22%;
   position: fixed;
   top: 155px;
@@ -3918,6 +3919,13 @@ input[type=checkbox]:checked::after {
   .custom-filter {
     top: 135px;
   }
+  .product-two-elements > span > div {
+    width: 30%;
+  }
+  .product-two-elements > button {
+    width: 40%;
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 1490px) {
   .custom-header-elem__search input:focus {
@@ -3993,6 +4001,33 @@ input[type=checkbox]:checked::after {
     height: 40px;
     width: 40px;
   }
+  .basket-header > h2 {
+    font-size: 24px;
+  }
+  .basket-header > i {
+    font-size: 24px;
+  }
+  .product-two-elements {
+    padding: 0;
+  }
+  .product-two-elements > button {
+    width: 50%;
+    gap: 10px;
+  }
+  .product-description > p {
+    font-size: 19px;
+    font-weight: 400;
+    height: 100px;
+  }
+  .basket-card {
+    gap: 10px;
+  }
+  .basket-footer > span {
+    font-size: 32px;
+  }
+  .basket-footer > button {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .custom-container {
@@ -4031,6 +4066,10 @@ input[type=checkbox]:checked::after {
   .custom-filter > span > h4 {
     font-size: 16px;
   }
+  .custom-filter span {
+    display: block;
+    margin-bottom: 0px;
+  }
   .filter-h2 > h2 {
     font-size: 24px;
   }
@@ -4045,6 +4084,58 @@ input[type=checkbox]:checked::after {
   }
   .custom-filter-line {
     display: none;
+  }
+  .product-container > div > h2 {
+    font-size: 32px;
+  }
+  .product-two-elements > span > div {
+    width: 40%;
+    padding: 0px 5px;
+    gap: 0px;
+  }
+  .product-two-elements > span > div > input {
+    font-size: 24px;
+  }
+  .product-two-elements > span > div > p {
+    font-size: 24px;
+  }
+  .product-two-elements {
+    padding: 0;
+  }
+  .product-two-elements > button {
+    width: 60%;
+    padding: 10px 5px;
+  }
+  .basket-header > h2 i {
+    font-size: 19px;
+  }
+  .basket-card {
+    gap: 5px;
+  }
+  .amount-input-container::after {
+    font-size: 19px;
+  }
+  .amount-input-container {
+    width: 25%;
+  }
+  .basket-two-elements > span > h3 {
+    font-size: 19px;
+  }
+  .basket-two-elements > span > button {
+    font-size: 19px;
+  }
+  .box-two-elements > p {
+    font-size: 19px;
+  }
+  .basket-two-elements > span {
+    font-size: 19px;
+  }
+  .basket-footer > span {
+    font-size: 20px;
+    gap: 5px;
+  }
+  .basket-footer > button {
+    font-size: 20px;
   }
   footer {
     height: 750px;

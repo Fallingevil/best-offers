@@ -241,14 +241,11 @@
           </div>
         </section>
       </div>
-    </main>
-
-    <section class="layout hidden">
-      <div class="custom-filter hidden" id="custom-filter">
+      <div class="custom-filter" id="custom-filter">
         <span class="filter-h2">
           <h2>Filter</h2>
           <button id="close-icon">
-            <i class="bx bx-x"></i>
+            <!-- <i class="bx bx-x"></i> -->
           </button>
         </span>
         <span>
@@ -288,6 +285,10 @@
           <button class="custom-btn">Save</button>
         </div>
       </div>
+    </main>
+
+    <!-- <section class="layout hidden">
+      
       <div class="top-sales-box">
         <h1>Results for "Notebook"</h1>
         <section class="top-sales-cards">
@@ -417,7 +418,7 @@
           </div>
         </section>
       </div>
-    </section>
+    </section> -->
 
     <!--  basket-->
     <section class="basket-hidden">
@@ -559,31 +560,31 @@
         filter.classList.remove("hidden");
       });
 
-      // Hide filter and show circle button when X icon is clicked
-      closeIcon.addEventListener("click", () => {
-        filter.classList.add("hidden");
-      });
+      // // Hide filter and show circle button when X icon is clicked
+      // closeIcon.addEventListener("click", () => {
+      //   filter.classList.add("hidden");
+      // });
 
-      // Show filter and hide circle button when the circle button is clicked
-      circleButton.addEventListener("click", () => {
-        filter.classList.remove("hidden");
-      });
+      // // Show filter and hide circle button when the circle button is clicked
+      // circleButton.addEventListener("click", () => {
+      //   filter.classList.remove("hidden");
+      // });
 
-      // Hide filter when clicking outside the filter and search input
-      document.addEventListener("click", (event) => {
-        if (
-          !event.target.closest(".custom-search-input") &&
-          !event.target.closest(".custom-filter")
-        ) {
-          filter.classList.add("hidden");
-          circleButton.style.display = "block";
-        }
-      });
+      // // Hide filter when clicking outside the filter and search input
+      // document.addEventListener("click", (event) => {
+      //   if (
+      //     !event.target.closest(".custom-search-input") &&
+      //     !event.target.closest(".custom-filter")
+      //   ) {
+      //     filter.classList.add("hidden");
+      //     circleButton.style.display = "block";
+      //   }
+      // });
 
-      // Prevent filter from hiding when clicking inside it
-      filter.addEventListener("click", (event) => {
-        event.stopPropagation();
-      });
+      // // Prevent filter from hiding when clicking inside it
+      // filter.addEventListener("click", (event) => {
+      //   event.stopPropagation();
+      // });
     </script>
   </body>
 </html>
