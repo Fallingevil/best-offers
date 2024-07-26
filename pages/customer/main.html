@@ -12,6 +12,43 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-54e7be3a62ca9b7580d7f8c669f59e74.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
     <!-- LOGIC OF THIS PAGE -->
     <script defer src="/js/adding-products.js"></script>
 
@@ -19,6 +56,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="/js/cart.js" defer></script>
   </head>
   <body>
     <header>
@@ -57,14 +95,15 @@
           </div>
 
           <div class="custom-two-buttons">
-            <a href="/cart.html" class="custom-header-elem__btn">
-              <i class="bx bx-cart"></i><span>Basket</span>
+            <a class="custom-header-elem__btn" id="fa-cart-shopping">
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i
+              ><span>Basket</span>
             </a>
             <a
               href="/pages/registrations/create-account.html"
               class="custom-header-elem__btn"
             >
-              <i class="bx bx-user-circle"></i><span>Profile</span>
+              <i class="fa-solid fa-circle-user fa-2xl"></i><span>Profile</span>
             </a>
             <button class="custom-translate-btn">Rus</button>
           </div>
@@ -73,6 +112,138 @@
     </header>
 
     <main class="layout">
+      <div class="top-sales-box">
+        <h1>Top sales</h1>
+        <section class="top-sales-cards">
+          <a href="./product.html" class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </a>
+          <div class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="top-prod-card">
+            <div>
+              <img src="/images/products-images/paper.png" alt="product" />
+            </div>
+            <div class="top-prod-descr">
+              <div class="top-two-elements">
+                <h2>Notebook 48pages</h2>
+                <button class="custom-add-to-basket-btn">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
+                </button>
+              </div>
+              <div>
+                <span class="item-details_box">
+                  <p id="amount">
+                    Minimum Amount <span id="amt">1000pcs</span>
+                  </p>
+                  <p id="pages">Pages <span id="pgs">48</span></p>
+                  <p id="color">Color <span id="clr">red</span></p>
+                  <p id="price">Price <span id="prc">$ 0.56 / pcs</span></p>
+                  <p id="shipping">
+                    Delivery deadline <span id="shp">7 days</span>
+                  </p>
+                  <p id="other">Other <span id="othr">Square linead</span></p>
+                  <p id="other">
+                    Product Location <span id="othr">Somewhere</span>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="layout hidden">
       <div class="custom-filter hidden" id="custom-filter">
         <span class="filter-h2">
           <h2>Filter</h2>
@@ -118,7 +289,7 @@
         </div>
       </div>
       <div class="top-sales-box">
-        <h1>Top sales</h1>
+        <h1>Results for "Notebook"</h1>
         <section class="top-sales-cards">
           <a href="#" class="top-prod-card">
             <div>
@@ -128,7 +299,8 @@
               <div class="top-two-elements">
                 <h2>Notebook 48pages</h2>
                 <button class="custom-add-to-basket-btn">
-                  <i class="bx bx-cart"></i>Add to basket
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
                 </button>
               </div>
               <div>
@@ -158,7 +330,8 @@
               <div class="top-two-elements">
                 <h2>Notebook 48pages</h2>
                 <button class="custom-add-to-basket-btn">
-                  <i class="bx bx-cart"></i>Add to basket
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
                 </button>
               </div>
               <div>
@@ -188,7 +361,8 @@
               <div class="top-two-elements">
                 <h2>Notebook 48pages</h2>
                 <button class="custom-add-to-basket-btn">
-                  <i class="bx bx-cart"></i>Add to basket
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
                 </button>
               </div>
               <div>
@@ -218,7 +392,8 @@
               <div class="top-two-elements">
                 <h2>Notebook 48pages</h2>
                 <button class="custom-add-to-basket-btn">
-                  <i class="bx bx-cart"></i>Add to basket
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
+                  basket
                 </button>
               </div>
               <div>
@@ -242,8 +417,115 @@
           </div>
         </section>
       </div>
-    </main>
+    </section>
 
+    <!--  basket-->
+    <section class="basket-hidden">
+      <div class="basket-box">
+        <div class="basket-header">
+          <h2>Basket</h2>
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <section class="basket-container">
+          <div class="basket-card">
+            <input type="checkbox" />
+            <img src="/images/products-images/paper.png" alt="product" />
+            <div class="box-two-elements">
+              <div class="basket-two-elements">
+                <span class="basket-prod-name"
+                  ><h3>Notebook 48 pages</h3>
+                  <button><i class="fa-solid fa-trash"></i>Delete</button></span
+                >
+              </div>
+              <p>Delivery deadline: 7days</p>
+              <div class="basket-two-elements">
+                <span
+                  >Select amount:
+                  <div class="amount-input-container">
+                    <input type="number" id="amount-input" placeholder="999" />
+                  </div>
+                </span>
+                <p>1000$</p>
+              </div>
+            </div>
+          </div>
+          <div class="basket-card">
+            <input type="checkbox" />
+            <img src="/images/products-images/paper.png" alt="product" />
+            <div class="box-two-elements">
+              <div class="basket-two-elements">
+                <span class="basket-prod-name"
+                  ><h3>Notebook 48 pages</h3>
+                  <button><i class="fa-solid fa-trash"></i>Delete</button></span
+                >
+              </div>
+              <p>Delivery deadline: 7days</p>
+              <div class="basket-two-elements">
+                <span
+                  >Select amount:
+                  <div class="amount-input-container">
+                    <input type="number" id="amount-input" placeholder="999" />
+                  </div>
+                </span>
+                <p>1000$</p>
+              </div>
+            </div>
+          </div>
+          <div class="basket-card">
+            <input type="checkbox" />
+            <img src="/images/products-images/paper.png" alt="product" />
+            <div class="box-two-elements">
+              <div class="basket-two-elements">
+                <span class="basket-prod-name"
+                  ><h3>Notebook 48 pages</h3>
+                  <button><i class="fa-solid fa-trash"></i>Delete</button></span
+                >
+              </div>
+              <p>Delivery deadline: 7days</p>
+              <div class="basket-two-elements">
+                <span
+                  >Select amount:
+                  <div class="amount-input-container">
+                    <input type="number" id="amount-input" placeholder="999" />
+                  </div>
+                </span>
+                <p>1000$</p>
+              </div>
+            </div>
+          </div>
+          <div class="basket-card">
+            <input type="checkbox" />
+            <img src="/images/products-images/paper.png" alt="product" />
+            <div class="box-two-elements">
+              <div class="basket-two-elements">
+                <span class="basket-prod-name"
+                  ><h3>Notebook 48 pages</h3>
+                  <button><i class="fa-solid fa-trash"></i>Delete</button></span
+                >
+              </div>
+              <p>Delivery deadline: 7days</p>
+              <div class="basket-two-elements">
+                <span
+                  >Select amount:
+                  <div class="amount-input-container">
+                    <input type="number" id="amount-input" placeholder="999" />
+                  </div>
+                </span>
+                <p>1000$</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="basket-footer">
+          <span
+            >Total:
+            <p>$4000</p></span
+          >
+          <button>Place an order</button>
+        </div>
+      </div>
+    </section>
     <footer>
       <img class="footer" src="/images/back-images/union.svg" alt="logo" />
       <div class="container">
