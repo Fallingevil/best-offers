@@ -4,7 +4,23 @@
 @import "./adding-product";
 @import "./email";
 @import "./edit-password";
+@import "./user-info";
 @import "./adding-products_edit";
+
+#button-inactive {
+  font-size: 24px;
+  grid-column: 2;
+  font-family: $font-family;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: not-allowed;
+  background: #555555;
+}
 
 $darkblue: #00317d;
 $skyblue: #0384d8;
@@ -257,6 +273,7 @@ body {
   flex-direction: row;
   position: relative;
   height: 190vh;
+  width: 100%;
 }
 
 .wave-back::before {
@@ -561,6 +578,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 150px;
+  margin-bottom: 200px;
   gap: 20px;
   & > span {
     font-size: 24px;
@@ -617,6 +635,10 @@ body {
     &__text {
       gap: 20px;
     }
+  }
+
+  .err-page {
+    margin-bottom: 100px;
   }
 
   footer {
@@ -724,13 +746,6 @@ body {
   .wave-back {
     height: 210vh;
     margin-top: -100px;
-  }
-  .header-elem {
-    height: 130px;
-    &__logo > img {
-      width: 84px;
-      height: 88px;
-    }
   }
 
   .phone-box {

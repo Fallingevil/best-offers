@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Offers</title>
     <link rel="icon" href="/images/logo-web.svg" type="web-logo" />
-    <link rel="apple-touch-icon" href="images/logo-web.svg" />
+    <link rel="apple-touch-icon" href="/images/logo-web.svg" />
     <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
     <link
@@ -64,7 +64,6 @@
         <section class="custom-header-elem">
           <a href="/index.html" class="custom-header-elem__logo">
             <img src="/images/logo-web.svg" alt="logo" />
-            <img src="/images/logo-text.svg" alt="text" />
           </a>
 
           <div class="expand-elements">
@@ -96,13 +95,10 @@
 
           <div class="custom-two-buttons">
             <a class="custom-header-elem__btn" id="fa-cart-shopping">
-              <i class="fa-sharp fa-solid fa-cart-shopping"></i
+              <i id="cart-button" class="fa-sharp fa-solid fa-cart-shopping"></i
               ><span>Basket</span>
             </a>
-            <a
-              href="/pages/registrations/create-account.html"
-              class="custom-header-elem__btn"
-            >
+            <a class="custom-header-elem__btn" id="profile-button">
               <i class="fa-solid fa-circle-user fa-2xl"></i><span>Profile</span>
             </a>
             <button class="custom-translate-btn">Rus</button>
@@ -112,6 +108,24 @@
     </header>
 
     <main class="layout">
+      <div class="user-info-box hidden">
+        <span>
+          <h1>
+            Company Name<i id="close" class="fa-sharp fa-solid fa-xmark"></i>
+          </h1>
+          <p>someemailhere@gmail.com</p>
+          <p>0000 0000 0000 0000</p>
+        </span>
+
+        <span>
+          <a href="/pages/edits/business-info_edit.html"
+            >Edit Business Information</a
+          >
+          <a href="/pages/edits/password_edit.html">Edit Password</a>
+          <a href="/pages/edits/email_edit.html">Edit E-mail</a>
+          <a href="#">My orders</a>
+        </span>
+      </div>
       <div class="top-sales-box">
         <h1>Top sales</h1>
         <section class="top-sales-cards">
@@ -425,7 +439,7 @@
       <div class="basket-box">
         <div class="basket-header">
           <h2>Basket</h2>
-          <i class="fa-sharp fa-solid fa-xmark"></i>
+          <i id="close-basket" class="fa-sharp fa-solid fa-xmark"></i>
         </div>
         <section class="basket-container">
           <div class="basket-card">
@@ -533,9 +547,7 @@
         <div class="footer-elements">
           <div>
             <a href="#"
-              ><img src="/images/back-images/White-logo.svg" alt="logo" /><img
-                src="/images/back-images/white-text-logo.svg"
-                alt="logo"
+              ><img src="/images/back-images/White-logo.svg" alt="logo"
             /></a>
             <span>
               <h3>Contact</h3>
@@ -544,7 +556,7 @@
               <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
             </span>
           </div>
-          <h5>©2023 <big>Best Offer Deal</big> all rights reserved</h5>
+          <h5>©2023 <big>Best Offer Deals</big> all rights reserved</h5>
         </div>
       </div>
     </footer>

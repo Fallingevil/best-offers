@@ -1,15 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const cartIcon = document.querySelector("#fa-cart-shopping");
-  const xmarkIcon = document.querySelector(".fa-xmark");
-  const basketSection = document.querySelector(".basket-hidden");
+  // Profile toggle functionality
+  const profileButton = document.querySelector("#profile-button");
+  const userInfoBox = document.querySelector(".user-info-box");
+  const closeUserInfoButton = document.querySelector("#close");
 
-  cartIcon.addEventListener("click", () => {
+  profileButton.addEventListener("click", () => {
+    userInfoBox.classList.toggle("hidden");
+  });
+
+  closeUserInfoButton.addEventListener("click", () => {
+    userInfoBox.classList.add("hidden");
+  });
+
+  // Cart toggle functionality
+  const cartButton = document.querySelector("#fa-cart-shopping");
+  const basketSection = document.querySelector(".basket-hidden");
+  const closeBasketButton = document.querySelector("#close-basket");
+
+  cartButton.addEventListener("click", () => {
     basketSection.classList.remove("basket-hidden");
     basketSection.classList.add("basket");
   });
 
-  xmarkIcon.addEventListener("click", () => {
+  closeBasketButton.addEventListener("click", () => {
     basketSection.classList.remove("basket");
+    console.log("working");
     basketSection.classList.add("basket-hidden");
   });
 });

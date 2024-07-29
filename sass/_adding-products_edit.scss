@@ -8,6 +8,7 @@
 .layout {
   display: grid;
   grid-template-columns: 2fr 2fr 4fr 1fr;
+  gap: 30px;
 }
 
 .custom-phone-box {
@@ -70,7 +71,7 @@
 
 .custom-header-elem {
   width: 100%;
-  height: 150px;
+  height: 100px;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -79,8 +80,8 @@
     align-items: center;
     gap: 20px;
     & > img {
-      width: 80px;
-      height: 110px;
+      width: 203px;
+      height: 100px;
     }
   }
   &__btn {
@@ -274,17 +275,25 @@ input[type="checkbox"]:checked {
   border-color: #00317d;
 }
 
-input[type="checkbox"]:checked::after {
+input[type="checkbox"]::after {
   content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 32px; /* Adjust to vertically center the icon */
+  font-size: 24px; /* Adjust the icon size */
+  color: white;
   position: absolute;
-  width: 12px;
-  height: 24px;
-  border: solid white;
-  border-width: 0 4px 4px 0;
-  transform: rotate(45deg);
-  top: 0px;
-  left: 8px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
+
+input[type="checkbox"]:checked::after {
+  content: "✓"; /* Unicode character for check mark */
+}
+
 .basket-card {
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
@@ -361,7 +370,7 @@ input[type="checkbox"]:checked::after {
         left: 0;
         left: unset;
         right: 0;
-        border-radius: 20px;
+        border-radius: 15px;
         width: 0%;
         height: 100%;
         z-index: -1;
@@ -441,7 +450,7 @@ input[type="checkbox"]:checked::after {
 .top-sales-box {
   margin-top: 100px;
   display: flex;
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
   flex-direction: column;
   width: 100%;
   gap: 20px;
@@ -469,7 +478,7 @@ input[type="checkbox"]:checked::after {
   gap: 15px;
   background-color: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.226);
-  width: 90%;
+  width: 100%;
 
   padding: 15px;
 }
@@ -720,6 +729,7 @@ input[type="checkbox"]:checked::after {
   & > span {
     display: flex;
     align-items: center;
+    gap: 17px;
     width: 100%;
     & > div {
       display: flex;
@@ -743,6 +753,7 @@ input[type="checkbox"]:checked::after {
   & > button {
     display: flex;
     align-items: center;
+    font-family: $font-family;
     width: 30%;
     gap: 2px;
     justify-content: center;
@@ -793,12 +804,18 @@ input[type="checkbox"]:checked::after {
 }
 
 @media (max-width: 1880px) {
+  .layout {
+    grid-template-columns: 2fr 2fr 4fr 0.5fr;
+  }
   .custom-header-elem__search input:focus {
     width: 42vw;
   }
 }
 
 @media (max-width: 1720px) {
+  .layout {
+    grid-template-columns: 2fr 2fr 4fr 0.7fr;
+  }
   .custom-container {
     max-width: 1400px;
   }
@@ -808,6 +825,9 @@ input[type="checkbox"]:checked::after {
 }
 
 @media (max-width: 1600px) {
+  .layout {
+    grid-template-columns: 2fr 2fr 4fr 0.5fr;
+  }
   .custom-container {
     max-width: 1140px;
   }
@@ -837,7 +857,7 @@ input[type="checkbox"]:checked::after {
     width: 30%;
   }
   .product-two-elements > button {
-    width: 40%;
+    width: 50%;
     gap: 10px;
   }
 }
@@ -1047,7 +1067,7 @@ input[type="checkbox"]:checked::after {
   .product-two-elements {
     padding: 0;
     & > button {
-      width: 60%;
+      width: 70%;
       padding: 10px 5px;
     }
   }
