@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Offers</title>
+    <link rel="icon" href="/images/logo-web.svg" type="web-logo" />
+    <link rel="apple-touch-icon" href="/images/logo-web.svg" />
+    <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <section class="header-elem">
+          <a href="/index.html" class="header-elem__logo">
+            <img src="/images/logo-web.svg" alt="logo" />
+          </a>
+          <a href="/pages/404-error.html" class="company">Компания</a>
+          <div class="phone-box">
+            <a href="tel:+998909999999">
+              <img
+                class="phone-box__icon"
+                src="/images/icons/phone.svg"
+                alt="icon"
+              />
+            </a>
+            <span class="phone-box__numbers">
+              <a href="tel:+998909999999">+998 (90) 999-99-99</a>
+            </span>
+          </div>
+          <div class="two-buttons">
+            <a
+              href="/pages/registrations/create-account.html"
+              class="header-elem__btn"
+            >
+              <span>Регистрация</span><i class="bx bxs-plus-circle"></i>
+            </a>
+            <button class="translate-btn">Uz</button>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main id="content">
+      <section class="login">
+        <div class="login_buttons">
+          <a href="/pages/ru/registrations/create-account.html" class="button"
+            >Регистрация</a
+          >
+          <button class="button active">Войти</button>
+        </div>
+        <div class="login_box">
+          <h2>Войдите в свой аккаунт</h2>
+
+          <section class="input-box">
+            <h3>Э-почта</h3>
+            <div class="inp">
+              <input
+                required
+                class="inputs"
+                type="email"
+                name="emai"
+                id="login-email"
+                placeholder="example@gmail.com"
+              />
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
+            <span>
+              <h3>Пароль</h3>
+              <a id="forgot-password-link" href="#"> Забыли пароль?</a>
+            </span>
+            <div class="inp">
+              <input
+                required
+                class="inputs"
+                type="password"
+                name="password"
+                id="login-password"
+                placeholder="Please enter your password"
+              />
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
+          </section>
+
+          <button type="button" class="btn-sign-in" id="login">Войти</button>
+        </div>
+      </section>
+
+      <!-- Forgot password? -->
+      <section class="forgot-password hidden">
+        <div class="reset">
+          <a id="back-to-login" href="#">
+            <img src="/images/icons/left.svg" alt="back"
+          /></a>
+          <h1>Сброс пароля</h1>
+        </div>
+        <div class="forgot-elements">
+          <p>
+            Введите адрес электронной почты, связанный с вашей учетной записью,
+            и мы отправим вам электронное письмо с кодом подтверждения для
+            сброса пароля
+          </p>
+
+          <form action="/pages/seller/adding-product.html" class="input-box">
+            <h3>Э-почта</h3>
+            <div class="inp">
+              <input
+                required
+                class="inputs"
+                type="email"
+                name="emai"
+                id="reset-email"
+                placeholder="Введите свой электронную почту"
+              />
+              <span class="error-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              </span>
+              <span class="success-icon hidden">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+              </span>
+              <div class="error"></div>
+            </div>
+
+            <div class="f-two-elem">
+              <div class="inp">
+                <input
+                  required
+                  class="inputs"
+                  type="text"
+                  name="emai verification"
+                  id="email-verification"
+                  placeholder="Введите код подтверждения"
+                />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+              <button id="send-code" type="button">Отправить</button>
+            </div>
+
+            <div class="forgot-password-input">
+              <h3>Установите пароль учетной записи</h3>
+              <div class="inp">
+                <input
+                  required
+                  class="inputs"
+                  type="password"
+                  name="password"
+                  id="confirm-password"
+                  placeholder="Введите пароль"
+                />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+
+              <div class="inp">
+                <input
+                  required
+                  class="inputs"
+                  type="password"
+                  name="password"
+                  id="reset-password"
+                  placeholder="Введите пароль еще раз"
+                />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <button class="f-btn-creat-acc" id="create-acc">Сбросить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img class="footer" src="/images/back-images/union.svg" alt="logo" />
+      <div class="container">
+        <div class="footer-elements">
+          <div>
+            <a href="#"
+              ><img src="/images/back-images/White-logo.svg" alt="logo"
+            /></a>
+            <span>
+              <h3>Contact</h3>
+              <a href="#">someemailhere@mail.com</a>
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+            </span>
+          </div>
+          <h5>©2023 <big>Best Offer Deals</big> all rights reserved</h5>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

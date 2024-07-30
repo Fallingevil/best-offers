@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Offers</title>
+    <link rel="icon" href="/images/logo-web.svg" type="web-logo" />
+    <link rel="apple-touch-icon" href="/images/logo-web.svg" />
+    <link href="https://fonts.cdnfonts.com/css/cunia" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <section class="header-elem">
+          <a href="/index.html" class="header-elem__logo">
+            <img src="/images/logo-web.svg" alt="logo" />
+          </a>
+          <a href="/pages/404-error.html" class="company">Компания</a>
+          <div class="phone-box">
+            <a href="tel:+998909999999">
+              <img
+                class="phone-box__icon"
+                src="/images/icons/phone.svg"
+                alt="icon"
+              />
+            </a>
+            <span class="phone-box__numbers">
+              <a href="tel:+998909999999">+998 (90) 999-99-99</a>
+            </span>
+          </div>
+          <div class="two-buttons">
+            <a
+              href="/pages/ru/registrations/create-account.html"
+              class="header-elem__btn"
+            >
+              <span>Регистрация</span><i class="bx bxs-plus-circle"></i>
+            </a>
+            <button class="translate-btn">Uz</button>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="main">
+      <main class="main-busin-info">
+        <section class="left-side2">
+          <div class="steps-indic">
+            <div class="step inactive">
+              <h2>1</h2>
+              <span>Создания акаунта</span>
+            </div>
+            <div class="line"></div>
+            <div class="steps">
+              <h2>2</h2>
+              <span>Бизнес информация</span>
+            </div>
+            <div class="line"></div>
+            <div class="step inactive">
+              <h2>3</h2>
+              <span> Обзор приложения</span>
+            </div>
+          </div>
+        </section>
+        <form
+          action="/pages/registrations/under-review.html"
+          class="create-acc"
+        >
+          <div class="buss_box">
+            <h2>Бизнес информация</h2>
+
+            <div class="buss_two-elem">
+              <div>
+                <label for="choose">Company legal form</label>
+                <div class="inp">
+                  <input
+                    class="buss-inp"
+                    required
+                    list="browsers"
+                    placeholder="choose"
+                  />
+                  <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Google Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                  </datalist>
+                  <span class="error-icon hidden">
+                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                  </span>
+                  <span class="success-icon hidden">
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  </span>
+                  <div class="error"></div>
+                </div>
+              </div>
+
+              <div>
+                <label for="text">Registered Name</label>
+                <div class="inp">
+                  <input
+                    class="buss-inp"
+                    required
+                    list="text"
+                    type="text"
+                    placeholder="Enter name"
+                  />
+                  <span class="error-icon hidden">
+                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                  </span>
+                  <span class="success-icon hidden">
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  </span>
+                  <div class="error"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="other-label">
+              <label for="text">Company registered country</label>
+              <div class="inp">
+                <input required type="text" placeholder="Country" />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="other-label">
+              <label for="text">Company registered address</label>
+              <div class="inp">
+                <input required type="text" placeholder="Specific address" />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="other-label">
+              <label for="choose">Field of activity (Can choose many)</label>
+              <div class="inp">
+                <input required list="browsers" placeholder="choose" />
+                <datalist id="browsers">
+                  <option value="Internet Explorer"></option>
+                  <option value="Firefox"></option>
+                  <option value="Google Chrome"></option>
+                  <option value="Opera"></option>
+                  <option value="Safari"></option>
+                </datalist>
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="other-label">
+              <label for="text">VAT Registration Number</label>
+              <div class="inp">
+                <input required type="text" placeholder="0000 0000 0000 0000" />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="other-label">
+              <label for="text">Tax info (ИНН)</label>
+              <div class="inp">
+                <input required type="text" placeholder="0000 0000 0000 0000" />
+                <span class="error-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                </span>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="some-reg">
+              <p>Some Registration Certificate here</p>
+              <span class="file-pick">
+                <input
+                  required
+                  type="file"
+                  id="docpicker"
+                  accept=".pdf,.jpg,.jpeg,.png"
+                />
+                <div class="error"></div>
+                <label for="docpicker" id="file-label"> Add file </label>
+                <span class="label-span"
+                  >File formats: PDF, JPG, JPEG, PNG, 10MB</span
+                >
+              </span>
+            </div>
+
+            <button type="button" class="btn-creat-acc" id="create-acc">
+              Submit
+            </button>
+          </div>
+        </form>
+      </main>
+    </main>
+    <footer>
+      <img class="footer" src="/images/back-images/union.svg" alt="logo" />
+      <div class="container">
+        <div class="footer-elements">
+          <div>
+            <a href="#"
+              ><img src="/images/back-images/White-logo.svg" alt="logo"
+            /></a>
+            <span>
+              <h3>Contact</h3>
+              <a href="#">someemailhere@mail.com</a>
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+              <a href="tel: +998(90)9999999">+998 (90) 999-99-99</a>
+            </span>
+          </div>
+          <h5>©2023 <big>Best Offer Deals</big> all rights reserved</h5>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/business-info.js"></script>
+  </body>
+</html>

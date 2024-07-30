@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeBasketButton.addEventListener("click", () => {
     basketSection.classList.remove("basket");
-    console.log("working");
+
     basketSection.classList.add("basket-hidden");
   });
 });

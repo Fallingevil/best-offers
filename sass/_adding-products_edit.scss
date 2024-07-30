@@ -995,17 +995,17 @@ input[type="checkbox"]:checked::after {
     align-items: center;
   }
   .custom-header-elem__search input {
-    width: 200px;
+    width: 250px;
   }
 
   .custom-header-elem__search input:focus {
-    width: 45vw;
+    width: 53vw;
   }
   .custom-phone-box {
     right: 10px;
   }
   .custom-header-elem__logo > img {
-    width: 95px;
+    width: 155px;
     height: 100px;
   }
 
@@ -1025,6 +1025,8 @@ input[type="checkbox"]:checked::after {
   }
 
   .custom-filter {
+    overflow-y: scroll;
+    height: 350px;
     span {
       display: block;
       margin-bottom: 0px;
@@ -1032,7 +1034,7 @@ input[type="checkbox"]:checked::after {
   }
 
   .filter-h2 > h2 {
-    font-size: 24px;
+    font-size: 19px;
   }
 
   .custom-phone-box__icon {
@@ -1082,7 +1084,7 @@ input[type="checkbox"]:checked::after {
     font-size: 19px;
   }
   .amount-input-container {
-    width: 25%;
+    width: 27%;
   }
   .basket-two-elements {
     > span {
@@ -1096,6 +1098,7 @@ input[type="checkbox"]:checked::after {
   }
 
   .box-two-elements {
+    gap: 10px;
     & > p {
       font-size: 19px;
     }

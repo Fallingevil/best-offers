@@ -1,6 +1,10 @@
 @import "./header";
 
 // fonts
+@font-face {
+  font-family: "Cunia";
+  src: url("/fonts/Cunia.otf") format("truetype");
+}
 $font-family: "Montserrat", sans-serif;
 $second-family: "Inter", sans-serif;
 $Cunia-family: "Cunia", sans-serif;
@@ -465,10 +469,12 @@ $Cunia-family: "Cunia", sans-serif;
     width: 60px;
   }
   .steps > span {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 400;
   }
 
   .login_box > h2 {
+    font-family: $Cunia-family;
     font-size: 32px;
   }
 

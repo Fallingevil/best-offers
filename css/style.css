@@ -398,6 +398,10 @@ footer {
     font-size: 18px;
   }
 }
+@font-face {
+  font-family: "Cunia";
+  src: url("/fonts/Cunia.otf") format("truetype");
+}
 .main-create-acc {
   padding-inline: 20px;
   display: grid;
@@ -844,9 +848,11 @@ footer {
     width: 60px;
   }
   .steps > span {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 400;
   }
   .login_box > h2 {
+    font-family: "Cunia", sans-serif;
     font-size: 32px;
   }
   .reset > h1 {
@@ -3821,16 +3827,16 @@ input[type=checkbox]:checked::after {
     align-items: center;
   }
   .custom-header-elem__search input {
-    width: 200px;
+    width: 250px;
   }
   .custom-header-elem__search input:focus {
-    width: 45vw;
+    width: 53vw;
   }
   .custom-phone-box {
     right: 10px;
   }
   .custom-header-elem__logo > img {
-    width: 95px;
+    width: 155px;
     height: 100px;
   }
   .custom-header-elem__btn {
@@ -3844,12 +3850,16 @@ input[type=checkbox]:checked::after {
   .custom-filter > span > h4 {
     font-size: 16px;
   }
+  .custom-filter {
+    overflow-y: scroll;
+    height: 350px;
+  }
   .custom-filter span {
     display: block;
     margin-bottom: 0px;
   }
   .filter-h2 > h2 {
-    font-size: 24px;
+    font-size: 19px;
   }
   .custom-phone-box__icon {
     height: 40px;
@@ -3894,13 +3904,16 @@ input[type=checkbox]:checked::after {
     font-size: 19px;
   }
   .amount-input-container {
-    width: 25%;
+    width: 27%;
   }
   .basket-two-elements > span > h3 {
     font-size: 19px;
   }
   .basket-two-elements > span > button {
     font-size: 19px;
+  }
+  .box-two-elements {
+    gap: 10px;
   }
   .box-two-elements > p {
     font-size: 19px;
@@ -4037,9 +4050,24 @@ input[type=checkbox]:checked::after {
   background: #555555;
 }
 
+#button-inactive2 {
+  font-size: 24px;
+  grid-column: 2;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  cursor: not-allowed;
+  background: #555555;
+}
+
 @font-face {
-  font-family: "Cunia", sans-serif;
-  src: url("fonts/Cunia.otf") format("opentype");
+  font-family: "Cunia";
+  src: url("/fonts/Cunia.otf") format("truetype");
 }
 h1 {
   font-family: "Cunia", sans-serif;
@@ -4800,10 +4828,10 @@ body {
     max-width: 990px;
   }
   .what-v-do2__text > h3 {
-    font-size: 19.2px;
+    font-size: 24px;
   }
   .what-v-do2__text > p {
-    font-size: 15.2px;
+    font-size: 19px;
     width: 100%;
   }
   .what-v-do2_elements > img {
